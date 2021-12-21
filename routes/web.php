@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['namespace' => 'Frontend'], function () {
+    Route::get('/', [\App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('home');
+});
+
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
+    Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin.home');
 });
