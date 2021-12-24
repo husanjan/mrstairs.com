@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers\Frontend\Auth;
 
+use App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
-/**
- * Class LoginController
- *
- * @package App\Http\Controllers\Frontend\Auth
- */
 class LoginController extends Controller
 {
     /*
@@ -41,11 +37,5 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
-    }
-
-    /** @inheritdoc */
-    public function showLoginForm()
-    {
-        return view('frontend.auth.login');
     }
 }

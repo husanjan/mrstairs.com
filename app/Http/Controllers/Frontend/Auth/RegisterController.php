@@ -9,11 +9,6 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
-/**
- * Class RegisterController
- *
- * @package App\Http\Controllers\Frontend\Auth
- */
 class RegisterController extends Controller
 {
     /*
