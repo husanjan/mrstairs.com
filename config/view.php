@@ -17,6 +17,7 @@ return [
         resource_path('views'),
         resource_path('views/admin'),
         resource_path('views/frontend'),
+        resource_path('views/layouts/frontend'),
     ],
 
     /*

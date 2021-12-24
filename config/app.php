@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'MrStairs ® - UK&#039;s #1 Staircase Manufacturer - Help &amp; Resources'),
 
     /*
     |--------------------------------------------------------------------------
