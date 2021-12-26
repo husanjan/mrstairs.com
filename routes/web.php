@@ -18,10 +18,11 @@ Auth::routes();
 
 Route::group(['namespace' => 'Frontend', 'middleware' => 'auth'], function () {
     Route::get('/', [\App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('frontend.home');
-    Route::get('/markup', [\App\Http\Controllers\Frontend\HomeController::class, 'markup'])->name('frontend.markup');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin.home');
 });
+
+Route::get('/markup', [\App\Http\Controllers\Frontend\HomeController::class, 'markup'])->name('frontend.markup');
 
