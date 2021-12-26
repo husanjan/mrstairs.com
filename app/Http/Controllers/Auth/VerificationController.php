@@ -1,16 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\VerifiesEmails;
 
-/**
- * Class VerificationController
- *
- * @package App\Http\Controllers\Frontend\Auth
- */
 class VerificationController extends Controller
 {
     /*
