@@ -5,6 +5,6 @@
 
 
 
-    <h1>hh</h1>
+    <h1></h1>
     <h1 style="text-align: center;">Tet testsetset</h1>
 @endsection

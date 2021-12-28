@@ -2,5 +2,6 @@
     "/js/app.js": "/js/app.js",
     "/js/old-app.js": "/js/old-app.js",
     "/css/app.css": "/css/app.css",
+    "/css/old-login.css": "/css/old-login.css",
     "/css/old-app.css": "/css/old-app.css"
 }

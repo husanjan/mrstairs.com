@@ -17,3 +17,4 @@ mix.js('resources/js/app.js', 'public/js')
 
 mix.js('resources/js/old-app.js', 'public/js')
     .css('resources/css/old-app.css', 'public/css')
+    .css('resources/css/old-login.css', 'public/css')
