@@ -307,7 +307,9 @@
         </script>
     <meta name="theme-color" content="">					<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+    <noscript>
+
+        <style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
     <meta name="generator" content="Powered by Slider Revolution 6.2.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
     <link rel="icon" href="https://www.mrstairs.com/wp-content/uploads/2019/03/cropped-android-chrome-512x512-32x32.png" sizes="32x32" />
     <link rel="icon" href="https://www.mrstairs.com/wp-content/uploads/2019/03/cropped-android-chrome-512x512-192x192.png" sizes="192x192" />
