@@ -27579,6 +27579,58 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/css/Frontend/Auth/Lost/widget-nav.min.css":
+/*!*************************************************************!*\
+  !*** ./resources/css/Frontend/Auth/Lost/widget-nav.min.css ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Frontend/Auth/Lost/widget-layered-nav-stock-status.min.css":
+/*!**********************************************************************************!*\
+  !*** ./resources/css/Frontend/Auth/Lost/widget-layered-nav-stock-status.min.css ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Frontend/Auth/Lost/woo-widget-active-filters.min.css":
+/*!****************************************************************************!*\
+  !*** ./resources/css/Frontend/Auth/Lost/woo-widget-active-filters.min.css ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Frontend/Auth/Lost/footer-base.min.css":
+/*!**************************************************************!*\
+  !*** ./resources/css/Frontend/Auth/Lost/footer-base.min.css ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -27605,10 +27657,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/old-login.css":
-/*!*************************************!*\
-  !*** ./resources/css/old-login.css ***!
-  \*************************************/
+/***/ "./resources/css/Frontend/Auth/Login/old-login.css":
+/*!*********************************************************!*\
+  !*** ./resources/css/Frontend/Auth/Login/old-login.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Frontend/Auth/Lost/base.min.css":
+/*!*******************************************************!*\
+  !*** ./resources/css/Frontend/Auth/Lost/base.min.css ***!
+  \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -40224,8 +40289,13 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\Users\\\\sergey\\\
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
 /******/ 			"css/app": 0,
+/******/ 			"css/base.min": 0,
 /******/ 			"css/old-login": 0,
-/******/ 			"css/old-app": 0
+/******/ 			"css/old-app": 0,
+/******/ 			"css/footer-base.min": 0,
+/******/ 			"css/woo-widget-active-filters.min": 0,
+/******/ 			"css/widget-layered-nav-stock-status.min": 0,
+/******/ 			"css/widget-nav.min": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -40275,10 +40345,15 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\Users\\\\sergey\\\
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/old-login","css/old-app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/old-login","css/old-app"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","css/old-login","css/old-app"], () => (__webpack_require__("./resources/css/old-app.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/old-login","css/old-app"], () => (__webpack_require__("./resources/css/old-login.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/css/old-app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/css/Frontend/Auth/Login/old-login.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/css/Frontend/Auth/Lost/base.min.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/css/Frontend/Auth/Lost/widget-nav.min.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/css/Frontend/Auth/Lost/widget-layered-nav-stock-status.min.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/css/Frontend/Auth/Lost/woo-widget-active-filters.min.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","css/base.min","css/old-login","css/old-app","css/footer-base.min","css/woo-widget-active-filters.min","css/widget-layered-nav-stock-status.min","css/widget-nav.min"], () => (__webpack_require__("./resources/css/Frontend/Auth/Lost/footer-base.min.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

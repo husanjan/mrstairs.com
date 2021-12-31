@@ -1,0 +1,4 @@
+.widget_nav_menu ul li{color:#bbb;display:block;font-size:14px}
+.widget_nav_menu ul li a{display:inline-block;padding-right:2px}
+.widget_nav_menu li ul{margin-top:15px;padding-left:15px}[class*=color-scheme-light]
+.widget_nav_menu ul li{color:hsla(0,0%,100%,.6)}
