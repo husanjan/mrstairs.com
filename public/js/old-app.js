@@ -1,15 +1,5 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-(() => {
-/*!*********************************!*\
-  !*** ./resources/js/old-app.js ***!
-  \*********************************/
-
-})();
-
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-(() => {
 /*!*****************************************************!*\
   !*** ./resources/js/Frontend/Auth/Login/old-app.js ***!
   \*****************************************************/
@@ -82,7 +72,5 @@ window.addEventListener('LazyLoad::Initialized', function (e) {
     observer.observe(b, config);
   }
 }, !1);
-})();
-
 /******/ })()
 ;

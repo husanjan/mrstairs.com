@@ -38,10 +38,10 @@
     <!-- / Yoast SEO plugin. -->
 
     <!-- Scripts -->
-    <script src="{{ asset('js/old-app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
-    <link href="{{ asset('css/old-app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <script src='https://www.mrstairs.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
     <script src='https://www.mrstairs.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
@@ -76,7 +76,7 @@
 
         <div class="page-title page-title-default title-size-small title-design-centered color-scheme-dark" style="">
             <div class="container">
-                <h1 class="entry-title title">Help &#038; Resources</h1>
+                <h1 class="entry-title title">@yield('title')</h1>
                 <div class="yoast-breadcrumb"></div>
             </div>
         </div>

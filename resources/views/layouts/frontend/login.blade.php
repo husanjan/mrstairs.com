@@ -1,33 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="{{ mix('css/old-login.css') }}">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ mix('css/login.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.media='all';" id="ao_optimized_gfonts" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C600%7CLato%3A400%2C700%7CPoppins%3A400%2C600%7CLato%3A400%2C700%7CPoppins%3A400%2C600%7CLato%3A400%2C700&amp;display=swap" />
+    <link
+        rel="stylesheet"
+        media="print"
+        onload="this.onload=null;this.media='all';"
+        id="ao_optimized_gfonts"
+        href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C600%7CLato%3A400%2C700%7CPoppins%3A400%2C600%7CLato%3A400%2C700%7CPoppins%3A400%2C600%7CLato%3A400%2C700&amp;display=swap"
+    />
 
- <title>MrStairs ® - UK&#039;s #1 Staircase Manufacturer - Login</title>
-
+    <title>MrStairs ® - UK&#039;s #1 Staircase Manufacturer - Login</title>
 
 
     <meta name="theme-color" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-
-
 </head>
-
 
 
 <body class="page-template page-template-page-templates page-template-login page-template-page-templateslogin-php page page-id-587 full-height theme-woodmart woocommerce-no-js wrapper-full-width  form-style-square  form-border-width-2 categories-accordion-on woodmart-ajax-shop-on offcanvas-sidebar-mobile offcanvas-sidebar-tablet notifications-sticky elementor-default">
 
 <div class="hfeed site" id="page">
-
 
     <div class="wrapper login" id="full-width-page-wrapper">
 
@@ -39,13 +38,16 @@
 
                     <main class="site-main" id="main" role="main">
 
-                        <div class="site-logo m-0">
+                        <div class="site-logo m-1">
                             <!-- Your site title as branding in the menu -->
 
 
                             <div class="woodmart-logo-wrap p-0 m-0">
                                 <a href="https://www.mrstairs.com/" class="woodmart-logo woodmart-main-logo" rel="home">
-                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="MrStairs ®" style="max-width: 250px;" data-lazy-src="https://231252-706733-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/08/mrstairs-logo.svg"><noscript><img src="https://231252-706733-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/08/mrstairs-logo.svg" alt="MrStairs ®" style="max-width: 250px;"></noscript>
+                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="MrStairs ®" style="max-width: 250px;" data-lazy-src="https://231252-706733-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/08/mrstairs-logo.svg">
+                                    <noscript>
+                                        <img src="https://231252-706733-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2019/08/mrstairs-logo.svg" alt="MrStairs ®" style="max-width: 250px;">
+                                    </noscript>
                                 </a>
                             </div>
 
@@ -59,9 +61,8 @@
                         </div>
 
 
-
                         <div class="woocommerce-notices-wrapper"></div>
-                       @yield("content")
+                        @yield("content")
 
 
                     </main><!-- #main -->
@@ -80,17 +81,8 @@
 
 </div> <!-- end wrapper -->
 
-
-
-
-<script src="{{ mix('js/old-app.js') }}">
-  </script>
 <script data-no-minify="1" async src="https://www.mrstairs.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
 
 </body>
 
-
-
 </html>
-
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1640596324 -->
