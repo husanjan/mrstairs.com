@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\ContactController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -16,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::group(['namespace' => 'Frontend', 'middleware' => 'auth'], function () {
+Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/', [\App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('frontend.home');
+    Route::get('/contact', [ContactController::class, 'index'])->name('frontend.email.index');
+    Route::post('/contact/send', [ContactController::class, 'sendEmail'])->name('frontend.email.send');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
@@ -25,4 +28,3 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
 });
 
 Route::get('/markup', [\App\Http\Controllers\Frontend\HomeController::class, 'markup'])->name('frontend.markup');
-
