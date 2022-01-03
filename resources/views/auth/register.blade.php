@@ -2,61 +2,90 @@
 
 @section('content')
 
-
-
-    <form class="woocommerce-form woocommerce-form-login login" method="post">
-
+    <form
+        class="woocommerce-form woocommerce-form-login login"
+        method="post"
+    >
         @csrf
 
+        <p class="woocommerce-form-row form-row  ms-form-control material">
+            <label for="name">
+                Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                id="name"
+                type="text"
+                class="form-control input-text"
+                name="name"
+                placeholder="Name"
+                required
+                autofocus
+            >
+
+            @if ($errors->has('name'))
+                <span class="text-danger">{{ $errors->first('name') }}</span>
+            @endif
+        </p>
 
         <p class="woocommerce-form-row form-row  ms-form-control material">
-            <label for="reg_email">
+            <label for="email_address">
                 Email address
                 <span class="required">*</span>
             </label>
 
             <input
-                type="email"
-                class="woocommerce-Input woocommerce-Input--text input-text form-control"
+                type="text"
+                placeholder="Email"
+                id="email_address"
+                class="form-control input-text"
                 name="email"
-                id="reg_email"
-                autocomplete="email"
-            />
+                required
+            >
+
+            @if ($errors->has('email'))
+                <span class="text-danger">{{ $errors->first('email') }}</span>
+            @endif
         </p>
 
-
         <p class="woocommerce-form-row form-row  ms-form-control material">
-            <label for="reg_password">
+            <label for="password">
                 Password
                 <span class="required">*</span>
             </label>
 
             <input
+                id="password"
                 type="password"
-                class="woocommerce-Input woocommerce-Input--text input-text form-control"
+                placeholder="Password"
+                class="form-control"
                 name="password"
-                id="reg_password"
-                autocomplete="new-password"
-            />
+                required
+            >
+
+            @if ($errors->has('password'))
+                <span class="text-danger">{{ $errors->first('password') }}</span>
+            @endif
         </p>
 
         <p
             class="woocommerce-form-row form-row  ms-form-control material"
         >
-            <label for="reg_password">
+            <label for="password_confirmation">
                 Confirm
                 <span class="required">*</span>
             </label>
 
             <input
                 type="password"
-                class="woocommerce-Input woocommerce-Input--text input-text form-control"
-                name="password"
-                id="reg_password"
+                class="input-text form-control"
+                name="password_confirmation"
+                id="password_confirmation"
                 autocomplete="new-password"
+                placeholder="Confirm Password"
             />
         </p>
-
 
         <div class="woocommerce-privacy-policy-text">
             <p>
@@ -70,15 +99,6 @@
                     privacy policy
                 </a>.
             </p>
-        </div>
-
-        <div class="anr_captcha_field">
-            <div
-                id="anr_captcha_field_1"
-                class="anr_captcha_field_div"
-            >
-                <input type="hidden" name="g-recaptcha-response" value=""/>
-            </div>
         </div>
 
         <p class="d-block clearfix mt-2 mb-4">
