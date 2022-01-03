@@ -198,7 +198,7 @@
                         <div class="wd-header-nav wd-header-main-nav text-left navigation-style-default" role="navigation">
                             <ul id="menu-main-menu" class="menu wd-nav wd-nav-main wd-style-default">
                                 <li id="menu-item-1074" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1074 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
-                                    <a href="https://www.mrstairs.com/" class="woodmart-nav-link"><span class="nav-link-text">Home</span></a>
+                                    <a href="/" class="woodmart-nav-link"><span class="nav-link-text">Home</span></a>
                                 </li>
                                 <li id="menu-item-1076" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1076 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
                                     <a href="https://www.mrstairs.com/stair-builder/choose-staircase-type/" class="woodmart-nav-link"><span class="nav-link-text">Stair Builder</span></a>
@@ -207,13 +207,13 @@
                                     <a href="https://shop.mrstairs.com" class="woodmart-nav-link"><span class="nav-link-text">Stair Parts Shop</span></a>
                                 </li>
                                 <li id="menu-item-1077" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-688 current_page_item menu-item-1077 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
-                                    <a href="https://www.mrstairs.com/help-resources/" class="woodmart-nav-link"><span class="nav-link-text">Help &#038; Resources</span></a>
+                                    <a href="/help-resources" class="woodmart-nav-link"><span class="nav-link-text">Help &#038; Resources</span></a>
                                 </li>
                                 <li id="menu-item-2288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2288 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
-                                    <a href="https://www.mrstairs.com/gallery/" class="woodmart-nav-link"><span class="nav-link-text">Gallery</span></a>
+                                    <a href="/gallery" class="woodmart-nav-link"><span class="nav-link-text">Gallery</span></a>
                                 </li>
                                 <li id="menu-item-1078" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1078 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
-                                    <a href="https://www.mrstairs.com/contact/" class="woodmart-nav-link"><span class="nav-link-text">Contact Us</span></a>
+                                    <a href="/contact" class="woodmart-nav-link"><span class="nav-link-text">Contact Us</span></a>
                                 </li>
                             </ul>
                         </div><!--END MAIN-NAV-->

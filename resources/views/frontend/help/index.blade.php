@@ -2,6 +2,10 @@
 
 @section('title', 'Help & Resources')
 
+@section('styles')
+    <link href="{{ asset('css/help-resource.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
 
     <div data-elementor-type="wp-page" data-elementor-id="688" class="elementor elementor-688" data-elementor-settings="[]">

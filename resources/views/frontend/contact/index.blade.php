@@ -74,7 +74,7 @@
 																</p>
 																<ul></ul>
 															</div>
-															<form action="{{ route('frontend.email.send') }}"
+															<form action="{{ route('frontend.contact.send') }}"
 																method="post" class="wpcf7-form init"
 																novalidate="novalidate" data-status="init">
 																@csrf

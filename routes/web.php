@@ -27,8 +27,29 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/contact', [ContactController::class, 'index'])->name('frontend.contact.index');
     Route::post('/contact/send', [ContactController::class, 'sendEmail'])->name('frontend.contact.send');
 
-    // Help and Resource pages
+    // Help & Resources pages
     Route::get('/help-resources', [HelpController::class, 'index'])->name('frontend.help.index');
+    Route::get('/faq', [HelpController::class, 'faq'])->name('frontend.help.faq');
+    Route::get('/delivery-information', [HelpController::class, 'deliveryInformation'])
+        ->name('frontend.help.deliveryInformation');
+
+    Route::get('/how-will-my-stairs-arrive', [HelpController::class, 'stairsArrival'])
+        ->name('frontend.help.stairsArrival');
+
+    Route::get('/rules-regulations', [HelpController::class, 'rulesRegulations'])
+        ->name('frontend.help.rulesRegulations');
+
+    Route::get('/measuring-your-stairs', [HelpController::class, 'measuringYourStairs'])
+        ->name('frontend.help.measuringYourStairs');
+
+    Route::get('/staircase-terminology', [HelpController::class, 'staircaseTerminology'])
+        ->name('frontend.help.staircaseTerminology');
+
+    Route::get('/fitting-guide', [HelpController::class, 'fittingGuide'])
+        ->name('frontend.help.fittingGuide');
+
+    Route::get('/privacy-policy', [HelpController::class, 'privacyPolicy'])
+        ->name('frontend.help.privacyPolicy');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
