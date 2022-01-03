@@ -20,14 +20,17 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::group(['namespace' => 'Frontend'], function () {
+    // Home
     Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
+
+    // Contact form
     Route::get('/contact', [ContactController::class, 'index'])->name('frontend.contact.index');
     Route::post('/contact/send', [ContactController::class, 'sendEmail'])->name('frontend.contact.send');
+
+    // Help and Resource pages
     Route::get('/help-resources', [HelpController::class, 'index'])->name('frontend.help.index');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin.home');
 });
-
-Route::get('/markup', [HomeController::class, 'markup'])->name('frontend.markup');
