@@ -41,7 +41,8 @@
 
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="headingOne">
-                                                                <button type="button" class="accordion-button  collapsed bg-dark text-white"  data-bs-toggle="collapse" data-bs-target="#General1">Q: How can I order from you?</button>
+                                                                <button type="button" class="accordion-button  collapsed bg-dark text-white"  data-bs-toggle="collapse"
+                                                                        data-bs-target="#General1">Q: How can I order from you?</button>
                                                             </h2>
                                                             <div id="General1" class="accordion-collapse collapse" data-bs-parent="#General">
                                                                 <div class="card-body">
@@ -65,7 +66,10 @@
 
 
                                             </div>
-                                                        <div id="elementor-tab-content-1221" class="elementor-tab-content elementor-clearfix elementor-active" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-1221" style="display: block;">
+                                                        <div id="elementor-tab-content-1221"
+                                                             class="elementor-tab-content elementor-clearfix elementor-active"
+                                                             data-tab="1" role="tabpanel"
+                                                             aria-labelledby="elementor-tab-title-1221" style="display: block;">
 
                                                         </div>
                                                     </div>
@@ -97,17 +101,13 @@
 
                                                         <div class="accordion" id="myAccordion">
                                                             <div class="accordion-item">
-                                                                <h2 class="accordion-header" id="headingOne">
-                                                                    <button type="button" class="accordion-button collapsed btn btn-info" data-bs-toggle="collapse "
-                                                                            data-bs-target="#collapseOne">Q: I am having difficulty using the Staircase Builder Tool. Are you able to help?</button>
+                                                                <h2 class="accordion-header" id="headingTwo">
+                                                                    <button type="button" class="accordion-button btn btn-info" data-bs-toggle="collapse"
+                                                                            data-bs-target="#collapseONE">Q: I am having difficulty using the Staircase Builder Tool. Are you able to help?</button>
                                                                 </h2>
-                                                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                                                                <div id="collapseONE" class="accordion-collapse collapse " data-bs-parent="#myAccordion">
                                                                     <div class="card-body">
-                                                                        <p>
-
-                                                                            A: If there is something you are unable to do with our Staircase Builder Tool please email or call us for assistance.
-
-                                                                        </p>
+                                                                        <p>A: If there is something you are unable to do with our Staircase Builder Tool please email or call us for assistance.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -187,14 +187,15 @@
 
                                             <div class="accordion" id="Products">
                                                 <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="Productss">
-                                                        <button type="button" class="accordion-button collapsed  text-white bg-success" data-bs-toggle="collapse "
-                                                                data-bs-target="#ProductsOne">Q: What types of staircase do you offer?</button>
+                                                    <h2 class="accordion-header" id="Products">
+                                                        <button type="button" class="accordion-button text-white bg-success" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseone">Q: What materials can I choose from?</button>
                                                     </h2>
-                                                    <div id="ProductsOne" class="accordion-collapse collapse show" data-bs-parent="#Products">
+                                                    <div id="collapseone" class="accordion-collapse collapse " data-bs-parent="#Products">
                                                         <div class="card-body">
                                                             <p>
-                                                                A: We offer straight, quarter turn and half turn staircases – in cut or closed string construction. The staircase can be tailored to your requirements and options added as required.
+                                                                A: Pine, Oak, MDF and Plywood are all used in the construction of our staircases.  Components can be specified in individual materials using the Staircase Builder Tool.
+                                                                We use FSC and PEFC certified materials.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -277,18 +278,13 @@
 
                                                         <div class="accordion" id="Delivery">
                                                             <div class="accordion-item">
-                                                                <h2 class="accordion-header" id="DeliveryOne">
-                                                                    <button type="button" class="accordion-button collapsed  text-white " style="background-color: #203454" data-bs-toggle="collapse "
-                                                                            data-bs-target="#DeliveryOne">
-                                                                        Q: What is the timescale for delivery?</button>
+                                                                <h2 class="accordion-header" id="headingThree">
+                                                                    <button type="button" class="accordion-button collapsed  text-white " style="background-color: #203454"
+                                                                        data-bs-toggle="collapse" data-bs-target="#Deliveryone">Q:WHAT IS THE  TIMESCALE FOR DELIVERY?</button>
                                                                 </h2>
-                                                                <div id="DeliveryOne" class="accordion-collapse collapse show" data-bs-parent="#Delivery">
+                                                                <div id="Deliveryone" class="accordion-collapse collapse" data-bs-parent="#Delivery">
                                                                     <div class="card-body">
-                                                                        <p>
-
-                                                                            A: We aim to have your staircase with you within 7 – 10 working days (Mainland England). This will be confirmed after we receive your order.
-
-                                                                        </p>
+                                                                        <p>A: We aim to have your staircase with you within 7 – 10 working days (Mainland England). This will be confirmed after we receive your order.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
