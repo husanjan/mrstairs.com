@@ -14,7 +14,6 @@
 
     <!-- This  is optimized with the Yoast SEO plugin v17.5 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>{{ config('app.name', 'MrStairs ® - UK&#039;s #1 Staircase Manufacturer - Help &amp; Resources') }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="description" content="Frequently Asked Questions | Delivery Information | How Will My Stairs Arrive? | Rules &amp; Regulations | Measuring Your Stairs | Staircase Terminology | Fitting Guide"/>
     <link rel="canonical" href="https://www.mrstairs.com/help-resources/"/>
     <meta property="og:locale" content="en_GB"/>
@@ -30,6 +29,8 @@
     <meta name="twitter:site" content="@mr_stairs"/>
     <script type="application/ld+json" class="yoast-schema-graph">
         {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.mrstairs.com/#website","url":"https://www.mrstairs.com/","name":"MrStairs \u00ae","description":"UK&#039;s #1 Staircase Manufacturer | Owned and Operated by a Family of Master Carpenters","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.mrstairs.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"https://www.mrstairs.com/help-resources/#primaryimage","inLanguage":"en-GB","url":"https://mrstairs.com/wp-content/uploads/2019/02/faq-100x100.png","contentUrl":"https://mrstairs.com/wp-content/uploads/2019/02/faq-100x100.png"},{"@type":"WebPage","@id":"https://www.mrstairs.com/help-resources/#webpage","url":"https://www.mrstairs.com/help-resources/","name":"MrStairs \u00ae - UK's #1 Staircase Manufacturer - Help & Resources","isPartOf":{"@id":"https://www.mrstairs.com/#website"},"primaryImageOfPage":{"@id":"https://www.mrstairs.com/help-resources/#primaryimage"},"datePublished":"2018-10-30T08:27:37+00:00","dateModified":"2019-08-22T14:28:09+00:00","description":"Frequently Asked Questions | Delivery Information | How Will My Stairs Arrive? | Rules & Regulations | Measuring Your Stairs | Staircase Terminology | Fitting Guide","breadcrumb":{"@id":"https://www.mrstairs.com/help-resources/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.mrstairs.com/help-resources/"]}]},{"@type":"BreadcrumbList","@id":"https://www.mrstairs.com/help-resources/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mrstairs.com/"},{"@type":"ListItem","position":2,"name":"Help &#038; Resources"}]}]}
+
+
     </script>
 
     <!-- Scripts -->
@@ -39,12 +40,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Another styles -->
-    @yield('styles')
+@yield('styles')
 
-    <script src='https://www.mrstairs.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-    <script src='https://www.mrstairs.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
-
-    <!-- Fonts -->
+<!-- Fonts -->
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/woodmart/fonts/woodmart-font.woff?v=5.3.6" crossorigin>
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.woff?5510888" crossorigin>
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/mrstairs/fonts/roboto-v19-latin-regular.woff2" crossorigin>
@@ -206,10 +204,19 @@
         <div class="wd-search-loader wd-fill woodmart-search-loader"></div>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src='https://www.mrstairs.com/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
-<script src='https://www.mrstairs.com/wp-includes/js/jquery/ui/mouse.min.js' id='jquery-ui-mouse-js'></script>
-<script src='https://www.mrstairs.com/wp-includes/js/jquery/ui/draggable.min.js' id='jquery-ui-draggable-js'></script>
+<script
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+></script>
+<script src='//www.mrstairs.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script src='//www.mrstairs.com/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+<script src='//www.mrstairs.com/wp-includes/js/jquery/ui/mouse.min.js' id='jquery-ui-mouse-js'></script>
+<script src='//www.mrstairs.com/wp-includes/js/jquery/ui/draggable.min.js' id='jquery-ui-draggable-js'></script>
+
+@yield('scripts')
+
 </body>
 </html>
