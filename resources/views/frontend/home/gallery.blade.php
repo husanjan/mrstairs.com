@@ -4,15 +4,26 @@
     <div class="elementor-widget-container">
         <div class="elemntor-text-editor elementor-clerfix">
             <div class="row text-center">
-                <ul class="simplefilter">
-                    <li>Test</li>
-                    <li>tEST</li>
-                    <li>TEST</li>
-                    <li>TSTTS</li>
-                    <li>TST</li>
-                </ul>
+                @foreach ($categories as $category)
+                    <a href="{{ route('frontend.gallery', [ 'id'=> $category->id ]) }}">{{ $category->name }}</a>
+                @endforeach
             </div>
-            
+            @forelse ($photos as $photo)
+                <a href="{{ $photo->path }}" class="example-image-link">
+                    <img src="{{ $photo->path }}" alt="">
+                </a>
+                <img src="{{ $photo->path }}" alt="">
+            @empty
+                <div class="alert alert-danger">Нет фотографии</div>
+            @endforelse
         </div>
     </div>
+    <script>
+        lightbox.option({
+            resizeDuration: 200,
+            wrapAround: true,
+            fadeDuration: 250,
+            imageFadeDuration: 250
+        });
+    </script>
 @endsection

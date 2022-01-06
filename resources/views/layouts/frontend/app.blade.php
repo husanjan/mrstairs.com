@@ -14,7 +14,7 @@
 
     <!-- This  is optimized with the Yoast SEO plugin v17.5 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>{{ config('app.name', 'MrStairs ® - UK&#039;s #1 Staircase Manufacturer - Help &amp; Resources') }}</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="description" content="Frequently Asked Questions | Delivery Information | How Will My Stairs Arrive? | Rules &amp; Regulations | Measuring Your Stairs | Staircase Terminology | Fitting Guide"/>
     <link rel="canonical" href="https://www.mrstairs.com/help-resources/"/>
     <meta property="og:locale" content="en_GB"/>
@@ -208,6 +208,7 @@
         <div class="wd-search-loader wd-fill woodmart-search-loader"></div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src='https://www.mrstairs.com/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
 <script src='https://www.mrstairs.com/wp-includes/js/jquery/ui/mouse.min.js' id='jquery-ui-mouse-js'></script>

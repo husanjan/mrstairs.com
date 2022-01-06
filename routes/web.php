@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\GalleryController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,7 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/', [\App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('frontend.home');
     Route::get('/contact', [ContactController::class, 'index'])->name('frontend.email.index');
     Route::post('/contact/send', [ContactController::class, 'sendEmail'])->name('frontend.email.send');
+    Route::get('/gallery/{id?}', [GalleryController::class, 'index'])->name('frontend.gallery');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
