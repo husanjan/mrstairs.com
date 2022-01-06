@@ -13,7 +13,7 @@ class GalleryController extends Controller
     {
         $categories = GalleryCategory::all();
         $photos = Gallery::where('category_id', $id)->get();
-    
-        return view('frontend.home.gallery', compact('categories', 'photos'));
+
+        return view('frontend.gallery.index', compact('categories', 'photos'));
     }
 }

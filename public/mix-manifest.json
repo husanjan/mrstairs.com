@@ -1,6 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
-    "/js/old-app.js": "/js/old-app.js",
-    "/css/app.css": "/css/app.css",
-    "/css/old-app.css": "/css/old-app.css"
+    "/css/help-resource.css": "/css/help-resource.css",
+    "/css/register.css": "/css/register.css",
+    "/css/login.css": "/css/login.css",
+    "/css/app.css": "/css/app.css"
 }

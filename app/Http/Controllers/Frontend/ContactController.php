@@ -12,12 +12,13 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('frontend.home.contact');
+        return view('frontend.contact.index');
     }
 
     public function sendEmail(ContactRequest $request)
     {
         Mail::to('contact@mrstairs.com')->send(new ContactMail);
+
         return back();
     }
 }

@@ -1,77 +1,120 @@
-@extends('layouts.app')
+@extends('layouts.frontend.register')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+    <form
+        class="woocommerce-form woocommerce-form-login login"
+        method="post"
+    >
+        @csrf
 
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+        <p class="woocommerce-form-row form-row  ms-form-control material">
+            <label for="name">
+                Name
+                <span class="required">*</span>
+            </label>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+            <input
+                id="name"
+                type="text"
+                class="form-control input-text"
+                name="name"
+                placeholder="Name"
+                required
+                autofocus
+            >
 
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+            @if ($errors->has('name'))
+                <span class="text-danger">{{ $errors->first('name') }}</span>
+            @endif
+        </p>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('E-Mail Address') }}</label>
+        <p class="woocommerce-form-row form-row  ms-form-control material">
+            <label for="email_address">
+                Email address
+                <span class="required">*</span>
+            </label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+            <input
+                type="text"
+                placeholder="Email"
+                id="email_address"
+                class="form-control input-text"
+                name="email"
+                required
+            >
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+            @if ($errors->has('email'))
+                <span class="text-danger">{{ $errors->first('email') }}</span>
+            @endif
+        </p>
 
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+        <p class="woocommerce-form-row form-row  ms-form-control material">
+            <label for="password">
+                Password
+                <span class="required">*</span>
+            </label>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+            <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                class="form-control"
+                name="password"
+                required
+            >
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+            @if ($errors->has('password'))
+                <span class="text-danger">{{ $errors->first('password') }}</span>
+            @endif
+        </p>
 
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+        <p
+            class="woocommerce-form-row form-row  ms-form-control material"
+        >
+            <label for="password_confirmation">
+                Confirm
+                <span class="required">*</span>
+            </label>
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
+            <input
+                type="password"
+                class="input-text form-control"
+                name="password_confirmation"
+                id="password_confirmation"
+                autocomplete="new-password"
+                placeholder="Confirm Password"
+            />
+        </p>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <div class="woocommerce-privacy-policy-text">
+            <p>
+                Your personal data will be used to support your experience throughout this website, to manage access to
+                your account, and for other purposes described in our
+                <a
+                    href="https://www.mrstairs.com/privacy-policy/"
+                    class="woocommerce-privacy-policy-link"
+                    target="_blank"
+                >
+                    privacy policy
+                </a>.
+            </p>
         </div>
-    </div>
-</div>
+
+        <p class="d-block clearfix mt-2 mb-4">
+            <a class="d-inline-block" href="https://www.mrstairs.com">Already have an account?</a>
+        </p>
+
+        <div class="actions">
+            <button
+                type="submit"
+                class="btn-lg float-left btn btn-primary"
+                name="register"
+                value="Log in"
+            >
+                Register
+            </button>
+        </div>
+    </form>
+
 @endsection

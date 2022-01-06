@@ -30,18 +30,16 @@
     <meta name="twitter:site" content="@mr_stairs"/>
     <script type="application/ld+json" class="yoast-schema-graph">
         {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.mrstairs.com/#website","url":"https://www.mrstairs.com/","name":"MrStairs \u00ae","description":"UK&#039;s #1 Staircase Manufacturer | Owned and Operated by a Family of Master Carpenters","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.mrstairs.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"https://www.mrstairs.com/help-resources/#primaryimage","inLanguage":"en-GB","url":"https://mrstairs.com/wp-content/uploads/2019/02/faq-100x100.png","contentUrl":"https://mrstairs.com/wp-content/uploads/2019/02/faq-100x100.png"},{"@type":"WebPage","@id":"https://www.mrstairs.com/help-resources/#webpage","url":"https://www.mrstairs.com/help-resources/","name":"MrStairs \u00ae - UK's #1 Staircase Manufacturer - Help & Resources","isPartOf":{"@id":"https://www.mrstairs.com/#website"},"primaryImageOfPage":{"@id":"https://www.mrstairs.com/help-resources/#primaryimage"},"datePublished":"2018-10-30T08:27:37+00:00","dateModified":"2019-08-22T14:28:09+00:00","description":"Frequently Asked Questions | Delivery Information | How Will My Stairs Arrive? | Rules & Regulations | Measuring Your Stairs | Staircase Terminology | Fitting Guide","breadcrumb":{"@id":"https://www.mrstairs.com/help-resources/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.mrstairs.com/help-resources/"]}]},{"@type":"BreadcrumbList","@id":"https://www.mrstairs.com/help-resources/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mrstairs.com/"},{"@type":"ListItem","position":2,"name":"Help &#038; Resources"}]}]}
-
-
-
-
     </script>
-    <!-- / Yoast SEO plugin. -->
 
     <!-- Scripts -->
-    <script src="{{ asset('js/old-app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
-    <link href="{{ asset('css/old-app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- Another styles -->
+    @yield('styles')
 
     <script src='https://www.mrstairs.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
     <script src='https://www.mrstairs.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
@@ -76,7 +74,7 @@
 
         <div class="page-title page-title-default title-size-small title-design-centered color-scheme-dark" style="">
             <div class="container">
-                <h1 class="entry-title title">Help &#038; Resources</h1>
+                <h1 class="entry-title title">@yield('title')</h1>
                 <div class="yoast-breadcrumb"></div>
             </div>
         </div>
