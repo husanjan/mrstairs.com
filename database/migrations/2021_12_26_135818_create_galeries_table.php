@@ -16,11 +16,8 @@ class CreateGaleriesTable extends Migration
         Schema::create('galleries', function (Blueprint $table) {
             $table->id();
             $table->tinyInteger('type')->unsigned();
-            $table->bigInteger('category_id')->unsigned();
             $table->string('path', 512);
             $table->timestamps();
-
-            $table->foreign('category_id')->references('id')->on('gallery_categories');
         });
     }
 

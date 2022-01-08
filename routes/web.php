@@ -21,10 +21,6 @@ use App\Http\Controllers\Frontend\GalleryController;
 Auth::routes();
 
 Route::group(['namespace' => 'Frontend'], function () {
-    Route::get('/', [\App\Http\Controllers\Frontend\HomeController::class, 'index'])->name('frontend.home');
-    Route::get('/contact', [ContactController::class, 'index'])->name('frontend.email.index');
-    Route::post('/contact/send', [ContactController::class, 'sendEmail'])->name('frontend.email.send');
-    Route::get('/gallery/{id?}', [GalleryController::class, 'index'])->name('frontend.gallery');
     // Home
     Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 
@@ -55,6 +51,8 @@ Route::group(['namespace' => 'Frontend'], function () {
 
     Route::get('/privacy-policy', [HelpController::class, 'privacyPolicy'])
         ->name('frontend.help.privacyPolicy');
+
+        Route::get('/gallery/{id?}', [GalleryController::class, 'index'])->name('frontend.gallery');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
