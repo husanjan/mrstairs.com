@@ -1,6 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/help-resource.js": "/js/help-resource.js",
+    "/js/gallery.js": "/js/gallery.js",
+    "/css/gallery.css": "/css/gallery.css",
     "/css/help-resource.css": "/css/help-resource.css",
     "/css/register.css": "/css/register.css",
     "/css/login.css": "/css/login.css",

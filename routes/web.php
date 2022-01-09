@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\Frontend\ContactController;
-use App\Http\Controllers\Frontend\HelpController;
-use App\Http\Controllers\Frontend\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\HelpController;
+use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\GalleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,6 +51,8 @@ Route::group(['namespace' => 'Frontend'], function () {
 
     Route::get('/privacy-policy', [HelpController::class, 'privacyPolicy'])
         ->name('frontend.help.privacyPolicy');
+
+        Route::get('/gallery/{id?}', [GalleryController::class, 'index'])->name('frontend.gallery');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {

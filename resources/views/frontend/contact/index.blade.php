@@ -179,27 +179,32 @@
 												<div class="elementor-widget-container">
 													<div class="elementor-text-editor elementor-clearfix">
 														<p><span
-																style="font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">Unit
-																8 Midas Business Centre, <br /></span><span
-																style="font-family: Calibri, sans-serif; font-size: 11pt;">Wantz
-																Road, <br />Dagenham, RM10 8PS<br /></span><br /><span
+																style="font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">
+																{{ config('company.address.region') }}<br /></span><span
+																style="font-family: Calibri, sans-serif; font-size: 11pt;">
+																{{ config('company.address.region1') }}, <br />{{
+																config('company.address.region2')
+																}}<br /></span><br /><span
 																style="font-family: Calibri, sans-serif;"><span
 																	style="font-size: 14.6667px;">Tel: <a
-																		href="tel: 0208 004 8656">0208 004
-																		8656</a></span></span></p>
+																		href="tel: {{ config('company.phone') }}">
+																		{{ config('company.phone') }}
+																	</a></span></span>
+														</p>
 														<p><span style="font-family: Calibri, sans-serif;"><span
 																	style="font-size: 14.6667px;">WhatsApp:
 																</span></span><span
 																style="font-family: Calibri, sans-serif;"><span
 																	style="font-size: 14.6667px;"><a
-																		href="https://api.whatsapp.com/send?phone=447897486314&amp;text=MrStairs.com%20Web%20Contact"
-																		target="_blank" rel="noopener">+44 7897 486
-																		314</a></span></span></p>
+																		href="https://api.whatsapp.com/send?phone={{ config('company.whatsapp') }}&amp;text=MrStairs.com%20Web%20Contact"
+																		target="_blank" rel="noopener">
+																		+{{ config('company.whatsapp') }}	
+																	</a></span></span></p>
 														<p><span style="font-family: Calibri, sans-serif;">Email:
 															</span><a
 																style="font-size: 16px; background-color: #ffffff;"
-																href="mailto:sales@mrstairs.com" target="_blank"
-																rel="noopener">sales@mrstairs.com</a>
+																href="mailto:{{ config('company.email') }}" target="_blank"
+																rel="noopener">{{ config('company.email') }}</a>
 														</p>
 														<p><span style="font-family: Calibri, sans-serif;"><span
 																	style="font-size: 11pt;">Opening
@@ -208,8 +213,9 @@
 																style="font-family: Calibri, sans-serif; font-size: 11pt;"><br /></span>
 														</p>
 														<p><span
-																style="font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">Mon
-																– Fri 8:00am – 5:00pm</span></p>
+																style="font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">
+															{{ config('company.open_hours') }}	
+															</span></p>
 														<p><i> Please contact us at least 24 hours before collection to
 																arrange a time.</i><span
 																style="font-family: Calibri, sans-serif; font-size: 11pt;"><br /></span>

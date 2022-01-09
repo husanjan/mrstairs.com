@@ -14,9 +14,11 @@ const mix = require('laravel-mix');
 mix
     .js('resources/js/app.js', 'public/js')
     .js('resources/js/help-resource.js', 'public/js')
+    .js('resources/js/gallery.js', 'public/js')
 
 mix
     .css('resources/css/app.css', 'public/css')
     .css('resources/css/login.css', 'public/css')
     .css('resources/css/register.css', 'public/css')
-    .css('resources/css/help-resource.css', 'public/css');
+    .css('resources/css/help-resource.css', 'public/css')
+    .css('resources/css/gallery.css', 'public/css');

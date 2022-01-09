@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGaleryCategoriesTable extends Migration
+class CreateGalleryItemCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateGaleryCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('gallery_categories', function (Blueprint $table) {
+        Schema::create('gallery_item_categories', function (Blueprint $table) {
             $table->id();
             $table->string('name', 256);
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateGaleryCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('galery_categories');
+        Schema::dropIfExists('gallery_item_categories');
     }
 }
