@@ -32,8 +32,6 @@
     <link rel="apple-touch-icon" href="https://www.mrstairs.com/wp-content/uploads/2019/03/cropped-android-chrome-512x512-180x180.png">
     <meta name="msapplication-TileImage" content="https://www.mrstairs.com/wp-content/uploads/2019/03/cropped-android-chrome-512x512-270x270.png">
 
-    <link href="https://www.googletagmanager.com/gtag/js?id=AW-755578573" rel="preload" as="script">
-    <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/755578573/?random=1641118950022&amp;cv=9&amp;fst=1641118950022&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_his=4&amp;u_tz=300&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;gtm=2oac10&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.mrstairs.com%2Fcreate-an-account&amp;ref=https%3A%2F%2Fwww.mrstairs.com%2Flogin%2F&amp;tiba=MrStairs%20%C2%AE%20-%20UK's%20%231%20Staircase%20Manufacturer%20-%20Create%20an%20account&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
 </head>
 
 

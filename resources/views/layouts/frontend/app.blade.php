@@ -44,7 +44,6 @@
 
 <!-- Fonts -->
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/woodmart/fonts/woodmart-font.woff?v=5.3.6" crossorigin>
-    <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.woff?5510888" crossorigin>
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/mrstairs/fonts/roboto-v19-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/mrstairs/fonts/roboto-v19-latin-500.woff2" crossorigin>
 

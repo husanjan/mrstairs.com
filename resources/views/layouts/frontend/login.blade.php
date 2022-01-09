@@ -81,8 +81,6 @@
 
 </div> <!-- end wrapper -->
 
-<script data-no-minify="1" async src="https://www.mrstairs.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
-
 </body>
 
 </html>
