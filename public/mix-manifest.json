@@ -1,9 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
-    "/js/bootstrap.bundle.min.js": "/js/bootstrap.bundle.min.js",
+    "/js/help-resource.js": "/js/help-resource.js",
     "/css/help-resource.css": "/css/help-resource.css",
     "/css/register.css": "/css/register.css",
     "/css/login.css": "/css/login.css",
-    "/css/app.css": "/css/app.css",
-    "/css/bootstrap.min.css": "/css/bootstrap.min.css"
+    "/css/app.css": "/css/app.css"
 }

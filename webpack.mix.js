@@ -11,9 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-mix.js('resources/js/bootstrap.bundle.min.js', 'public/js')
-    .css('resources/css/bootstrap.min.css', 'public/css')
+mix
+    .js('resources/js/app.js', 'public/js')
+    .js('resources/js/help-resource.js', 'public/js')
+
+mix
     .css('resources/css/app.css', 'public/css')
     .css('resources/css/login.css', 'public/css')
     .css('resources/css/register.css', 'public/css')

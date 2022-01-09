@@ -129,6 +129,7 @@
 </div> <!-- end wrapper -->
 <div class="wd-close-side woodmart-close-side"></div>
 <a href="#" class="scrollToTop"></a>
+
 <div class="mobile-nav wd-side-hidden wd-left wd-left">
     <div class="wd-search-form woodmart-search-form">
         <form role="search" method="get" class="searchform  woodmart-ajax-search" action="https://www.mrstairs.com/" data-thumbnail="1" data-price="1" data-post_type="post" data-count="20" data-sku="0" data-symbols_count="3">
@@ -176,6 +177,7 @@
         </li>
     </ul>
 </div><!--END MOBILE-NAV-->
+
 <div class="cart-widget-side wd-side-hidden wd-right">
     <div class="widget-heading">
         <span class="title widget-title">Shopping cart</span>
@@ -187,6 +189,7 @@
         <div class="widget_shopping_cart_content"></div>
     </div>
 </div>
+
 <div class="wd-search-full-screen wd-fill woodmart-search-full-screen">
     <span class="wd-close-search wd-action-btn wd-style-icon wd-cross-icon woodmart-close-search"><a></a></span>
     <form role="search" method="get" class="searchform  woodmart-ajax-search" action="https://www.mrstairs.com/" data-thumbnail="1" data-price="1" data-post_type="post" data-count="20" data-sku="0" data-symbols_count="3">
