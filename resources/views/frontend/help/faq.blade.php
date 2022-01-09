@@ -371,5 +371,6 @@
 
 @endsection
 
-<script src="{{ asset('js/help-resource.js') }}"></script>
-
+@section('scripts')
+    <script src="{{ asset('js/help-resource.js') }}"></script>
+@endsection
