@@ -4,6 +4,9 @@
 
 @section('styles')
     <link href="{{ asset('css/help-resource.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}" defer></script>
+
 @endsection
 
 @section('content')
@@ -192,13 +195,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-60550c8 elementor-column elementor-col-33 elementor-top-column" data-id="60550c8" data-element_type="column">
+                            <div   data-bs-toggle="modal" data-bs-target="#staticBackdrop"  class="elementor-element elementor-element-60550c8 elementor-column elementor-col-33 elementor-top-column" data-id="60550c8" data-element_type="column">
                                 <div class="elementor-column-wrap  elementor-element-populated">
                                     <div class="elementor-widget-wrap">
                                         <div class="elementor-element elementor-element-9667819 watch-guide elementor-widget elementor-widget-heading" data-id="9667819" data-element_type="widget" data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h5 class="elementor-heading-title elementor-size-default">Stair Builder
-                                                    User Guide</h5></div>
+                                                <h5 class="elementor-heading-title elementor-size-default">
+                                                    Stair Builder
+                                                    User Guide</h5>
+                                            </div>
                                         </div>
                                         <div class="elementor-element elementor-element-be69577 watch-guide elementor-widget elementor-widget-image" data-id="be69577" data-element_type="widget" data-widget_type="image.default">
                                             <div class="elementor-widget-container">
@@ -210,7 +215,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-4776a3b elementor-column elementor-col-33 elementor-top-column" data-id="4776a3b" data-element_type="column">
+
+   <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe width="766" height="415" src="https://www.youtube.com/embed/za-15tsmuJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="modal-footer">
+
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- END Modal -->
+   <div class="elementor-element elementor-element-4776a3b elementor-column elementor-col-33 elementor-top-column" data-id="4776a3b" data-element_type="column">
                                 <div class="elementor-column-wrap  elementor-element-populated">
                                     <div class="elementor-widget-wrap">
                                         <div class="elementor-element elementor-element-3ce84ce elementor-widget elementor-widget-heading" data-id="3ce84ce" data-element_type="widget" data-widget_type="heading.default">
