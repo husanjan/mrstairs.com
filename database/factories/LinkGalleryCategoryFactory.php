@@ -4,6 +4,11 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+/**
+ * Class LinkGalleryCategoryFactory
+ *
+ * @package Database\Factories
+ */
 class LinkGalleryCategoryFactory extends Factory
 {
     /**
@@ -14,8 +19,8 @@ class LinkGalleryCategoryFactory extends Factory
     public function definition()
     {
         return [
-            'gallery_id' => rand(1, 15),
-            'category_id' => rand(1, 5)
+            'gallery_item_id' => rand(1, 20),
+            'gallery_item_category_id' => rand(1, 5),
         ];
     }
 }

@@ -3,17 +3,25 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Gallery;
-use App\Models\GalleryCategory;
+use App\Models\GalleryItem;
+use App\Models\GalleryItemCategory;
 use Illuminate\Http\Request;
 
+/**
+ * Class GalleryController
+ *
+ * @package App\Http\Controllers\Frontend
+ */
 class GalleryController extends Controller
 {
-    public function index(Request $request, $id = 1)
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function index()
     {
-        $categories = GalleryCategory::all();
-        $photos = Gallery::where('category_id', $id)->get();
+        $categories = GalleryItemCategory::all();
+        $galleryItems = GalleryItem::all();
 
-        return view('frontend.gallery.index', compact('categories', 'photos'));
+        return view('frontend.gallery.index', compact('categories', 'galleryItems'));
     }
 }

@@ -2,10 +2,16 @@
 
 namespace Database\Seeders;
 
-use App\Models\Gallery;
-use App\Models\GalleryCategory;
+use App\Models\GalleryItem;
 use Illuminate\Database\Seeder;
+use App\Models\GalleryItemCategory;
+use App\Models\LinkGalleryCategory;
 
+/**
+ * Class GallerySeeder
+ *
+ * @package Database\Seeders
+ */
 class GallerySeeder extends Seeder
 {
     /**
@@ -15,7 +21,8 @@ class GallerySeeder extends Seeder
      */
     public function run()
     {
-        GalleryCategory::factory(5)->create();
-        Gallery::factory(20)->create();
+        GalleryItemCategory::factory(5)->create();
+        GalleryItem::factory(20)->create();
+        LinkGalleryCategory::factory(20)->create();
     }
 }

@@ -4,7 +4,12 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class GalleryCategoryFactory extends Factory
+/**
+ * Class GalleryItemCategoryFactory
+ *
+ * @package Database\Factories
+ */
+class GalleryItemCategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,7 +19,7 @@ class GalleryCategoryFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name()
+            'name' => $this->faker->name(),
         ];
     }
 }

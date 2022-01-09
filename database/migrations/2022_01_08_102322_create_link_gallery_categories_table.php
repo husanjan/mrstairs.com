@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateLinkGalleryCategoriesTable extends Migration
 {
@@ -15,11 +15,12 @@ class CreateLinkGalleryCategoriesTable extends Migration
     {
         Schema::create('link_gallery_categories', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('gallery_id')->unsigned();
-            $table->bigInteger('gallery_category_id')->unsigned();
+            $table->bigInteger('gallery_item_id')->unsigned();
+            $table->bigInteger('gallery_item_category_id')->unsigned();
+            $table->timestamps();
 
-            $table->foreign('gallery_category_id')->references('id')->on('gallery_categories');
-            $table->foreign('gallery_id')->references('id')->on('galleries');
+            $table->foreign('gallery_item_category_id')->references('id')->on('gallery_item_categories');
+            $table->foreign('gallery_item_id')->references('id')->on('gallery_items');
         });
     }
 

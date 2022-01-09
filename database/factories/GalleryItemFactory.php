@@ -4,7 +4,12 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class GalleryFactory extends Factory
+/**
+ * Class GalleryItemFactory
+ *
+ * @package Database\Factories
+ */
+class GalleryItemFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -15,7 +20,7 @@ class GalleryFactory extends Factory
     {
         return [
             'type' => 1,
-            'path'=> $this->faker->imageUrl()
+            'path' => $this->faker->imageUrl(),
         ];
     }
 }
