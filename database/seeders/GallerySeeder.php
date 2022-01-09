@@ -6,6 +6,7 @@ use App\Models\GalleryItem;
 use Illuminate\Database\Seeder;
 use App\Models\GalleryItemCategory;
 use App\Models\LinkGalleryCategory;
+use Illuminate\Support\Facades\DB;
 
 /**
  * Class GallerySeeder
@@ -21,8 +22,22 @@ class GallerySeeder extends Seeder
      */
     public function run()
     {
-        GalleryItemCategory::factory(5)->create();
-        GalleryItem::factory(20)->create();
-        LinkGalleryCategory::factory(20)->create();
+        // GalleryItemCategory::factory(5)->create();
+        // GalleryItem::factory(20)->create();
+        // LinkGalleryCategory::factory(20)->create();
+
+        $this->createCategory();
+    }
+
+    public function createCategory()
+    {
+        $datas = ['oak', 'cut string', 'pine', 'Quarter turn', 'Half turn'];
+        
+        foreach ($datas as $data) {
+            GalleryItemCategory::create([
+                'name' => $data
+            ]);
+        }
+        
     }
 }
