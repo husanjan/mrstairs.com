@@ -2750,6 +2750,7 @@ body.elementor-page-15951 {
 body.elementor-page-1215 {
     padding: 0px 0px 0px 0px;
 }
+
 .whb-top-bar .wd-dropdown {
     margin-top: 1px;
 }
@@ -2821,7 +2822,6 @@ body.elementor-page-1215 {
     }
 
 
-
 }
 
 .whb-top-bar {
@@ -2829,101 +2829,122 @@ body.elementor-page-1215 {
 }
 
 .whb-general-header {
-    border-color: rgba(129, 129, 129, 0.2);border-bottom-width: 1px;border-bottom-style: solid;
+    border-color: rgba(129, 129, 129, 0.2);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
-                                                    .wd-popup.wd-promo-popup{
-                                                        background-color:#111111;
-                                                        background-repeat:no-repeat;
-                                                        background-size:contain;
-                                                        background-position:left center;
-                                                    }
+.wd-popup.wd-promo-popup {
+    background-color: #111111;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+}
 
-.page-title-default{
-    background-color:#0a0a0a;
+.page-title-default {
+    background-color: #0a0a0a;
     background-image: url(https://www.mrstairs.com/wp-content/uploads/2021/01/wide.jpg);
-    background-size:cover;
-    background-position:center center;
+    background-size: cover;
+    background-position: center center;
 }
 
-.footer-container{
-    background-color:#ffffff;
+.footer-container {
+    background-color: #ffffff;
 }
 
-:root{
-    --wd-text-font:"Poppins", Arial, Helvetica, sans-serif;
-    --wd-text-font-weight:400;
-    --wd-text-color:#777777;
-    --wd-text-font-size:14px;
+:root {
+    --wd-text-font: "Poppins", Arial, Helvetica, sans-serif;
+    --wd-text-font-weight: 400;
+    --wd-text-color: #777777;
+    --wd-text-font-size: 14px;
 }
-:root{
-    --wd-title-font:"Poppins", Arial, Helvetica, sans-serif;
-    --wd-title-font-weight:600;
-    --wd-title-color:#242424;
+
+:root {
+    --wd-title-font: "Poppins", Arial, Helvetica, sans-serif;
+    --wd-title-font-weight: 600;
+    --wd-title-color: #242424;
 }
-:root{
-    --wd-entities-title-font:"Lato", Arial, Helvetica, sans-serif;
-    --wd-entities-title-font-weight:500;
-    --wd-entities-title-color:#333333;
-    --wd-entities-title-color-hover:rgb(51 51 51 / 65%);
+
+:root {
+    --wd-entities-title-font: "Lato", Arial, Helvetica, sans-serif;
+    --wd-entities-title-font-weight: 500;
+    --wd-entities-title-color: #333333;
+    --wd-entities-title-color-hover: rgb(51 51 51 / 65%);
 }
-:root{
-    --wd-alternative-font:"Lato", Arial, Helvetica, sans-serif;
+
+:root {
+    --wd-alternative-font: "Lato", Arial, Helvetica, sans-serif;
 }
-:root{
-    --wd-widget-title-font:"Poppins", Arial, Helvetica, sans-serif;
-    --wd-widget-title-font-weight:600;
-    --wd-widget-title-transform:uppercase;
-    --wd-widget-title-color:#333;
-    --wd-widget-title-font-size:16px;
+
+:root {
+    --wd-widget-title-font: "Poppins", Arial, Helvetica, sans-serif;
+    --wd-widget-title-font-weight: 600;
+    --wd-widget-title-transform: uppercase;
+    --wd-widget-title-color: #333;
+    --wd-widget-title-font-size: 16px;
 }
-:root{
-    --wd-header-el-font:"Lato", Arial, Helvetica, sans-serif;
-    --wd-header-el-font-weight:700;
-    --wd-header-el-transform:uppercase;
-    --wd-header-el-font-size:13px;
+
+:root {
+    --wd-header-el-font: "Lato", Arial, Helvetica, sans-serif;
+    --wd-header-el-font-weight: 700;
+    --wd-header-el-transform: uppercase;
+    --wd-header-el-font-size: 13px;
 }
-:root{
-    --wd-primary-color:#1f7872;
+
+:root {
+    --wd-primary-color: #1f7872;
 }
-:root{
-    --wd-alternative-color:#fbbc34;
+
+:root {
+    --wd-alternative-color: #fbbc34;
 }
-:root{
-    --wd-link-color:#333333;
-    --wd-link-color-hover:#242424;
+
+:root {
+    --wd-link-color: #333333;
+    --wd-link-color-hover: #242424;
 }
-:root{
-    --btn-default-bgcolor:#f7f7f7;
+
+:root {
+    --btn-default-bgcolor: #f7f7f7;
 }
-:root{
-    --btn-default-bgcolor-hover:#efefef;
+
+:root {
+    --btn-default-bgcolor-hover: #efefef;
 }
-:root{
-    --btn-shop-bgcolor:#1f7872;
+
+:root {
+    --btn-shop-bgcolor: #1f7872;
 }
-:root{
-    --btn-shop-bgcolor-hover:#6ca300;
+
+:root {
+    --btn-shop-bgcolor-hover: #6ca300;
 }
-:root{
-    --btn-accent-bgcolor:#1f7872;
+
+:root {
+    --btn-accent-bgcolor: #1f7872;
 }
-:root{
-    --btn-accent-bgcolor-hover:#6ca300;
+
+:root {
+    --btn-accent-bgcolor-hover: #6ca300;
 }
-:root{
-    --notices-success-bg:#459647;
+
+:root {
+    --notices-success-bg: #459647;
 }
-:root{
-    --notices-success-color:#fff;
+
+:root {
+    --notices-success-color: #fff;
 }
-:root{
-    --notices-warning-bg:#E0B252;
+
+:root {
+    --notices-warning-bg: #E0B252;
 }
-:root{
-    --notices-warning-color:#fff;
+
+:root {
+    --notices-warning-color: #fff;
 }
-:root{
+
+:root {
 
 
     --wd-form-brd-radius: 0px;
@@ -2956,11 +2977,6 @@ body.elementor-page-1215 {
     --btn-shop-brd-radius: 0px;
     --btn-shop-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
     --btn-shop-box-shadow-hover: inset 0 -2px 0 rgba(0, 0, 0, .15);
-
-
-
-
-
 
 
 }
@@ -3013,7 +3029,7 @@ div.wd-popup.wd-age-verify {
 }
 
 body.header-banner-display .website-wrapper {
-    margin-top:40px;
+    margin-top: 40px;
 }
 
 /* Tablet */
@@ -3024,7 +3040,7 @@ body.header-banner-display .website-wrapper {
     }
 
     body.header-banner-display .website-wrapper {
-        margin-top:40px;
+        margin-top: 40px;
     }
 }
 
@@ -3045,7 +3061,7 @@ body.header-banner-display .website-wrapper {
     border-bottom-style: solid;
 }
 
-.woodmart-pf-dropdown .filter-swatch>span, .woodmart-woocommerce-layered-nav .filter-swatch>span {
+.woodmart-pf-dropdown .filter-swatch > span, .woodmart-woocommerce-layered-nav .filter-swatch > span {
     background-position: -21px 0;
 }
 
@@ -3181,33 +3197,32 @@ body.header-banner-display .website-wrapper {
         flex-direction: row !important
     }
 }
+
 @media (min-width: 1025px) {
-    div.whb-main-header:not(.whb-sticked) .woodmart-navigation .item-level-0>a {
+    div.whb-main-header:not(.whb-sticked) .woodmart-navigation .item-level-0 > a {
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    div.whb-main-header.whb-sticked .woodmart-navigation .item-level-0>a {
+    div.whb-main-header.whb-sticked .woodmart-navigation .item-level-0 > a {
         padding-left: 15px;
         padding-right: 15px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    div.whb-main-header:not(.whb-sticked) .woodmart-navigation .item-level-0>a {
+    div.whb-main-header:not(.whb-sticked) .woodmart-navigation .item-level-0 > a {
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    div.whb-main-header.whb-sticked .woodmart-navigation .item-level-0>a {
+    div.whb-main-header.whb-sticked .woodmart-navigation .item-level-0 > a {
         padding-left: 15px;
         padding-right: 15px;
     }
 }
-#modalContainer{
 
-
-
+#stairBuilderUserGuideModal {
     display: none;
     position: fixed;
     z-index: 1;

@@ -14,18 +14,12 @@ $(function () {
             $('#' + contentContainer).show('slow');
         }
     });
-});
 
-//Modal script
-$(document).ready(function() {
-
-
-    $("#myBtn").on("click", function() {
-        $("#modalContainer").show();
+    $("#stairBuilderUserGuide").on("click", function () {
+        $("#stairBuilderUserGuideModal").show();
     });
 
-    $(".close").on("click", function() {
-        $("#modalContainer").hide();
+    $(".close, .bootbox-accept").on("click", function () {
+        $("#stairBuilderUserGuideModal").hide();
     });
-
 });
