@@ -1,12 +1,35 @@
-@extends('layouts.frontend.app')
+    @extends('layouts.frontend.app')
 
 @section('title', 'Help & Resources')
 
 @section('styles')
     <link href="{{ asset('css/help-resource.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/help-resource.js') }}" defer></script>
+
 @endsection
 
 @section('content')
+
+
+
+
+
+
+    <div id="modalContainer" >
+
+        <div  class="bootbox modal fade bootbox-alert show" tabindex="-1" role="dialog" style="display: block; padding-left: 0px;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content"><div class="modal-body">
+                        <button type="button" class="bootbox-close-button close" aria-hidden="true">×</button>
+                        <div class="bootbox-body"><iframe width="100%" height="415" src="https://www.youtube.com/embed/za-15tsmuJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        </div>
+                         </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary bootbox-accept">OK</button>
+                    </div></div></div></div>
+
+    </div>
+
 
     <div data-elementor-type="wp-page" data-elementor-id="688" class="elementor elementor-688" data-elementor-settings="[]">
         <div class="elementor-inner">
@@ -192,9 +215,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="elementor-element elementor-element-60550c8 elementor-column elementor-col-33 elementor-top-column" data-id="60550c8" data-element_type="column">
+                            <div id="myBtn" data-bs-target="#staticBackdrop" class="elementor-element elementor-element-60550c8 elementor-column elementor-col-33 elementor-top-column" data-id="60550c8" data-element_type="column">
                                 <div class="elementor-column-wrap  elementor-element-populated">
-                                    <div class="elementor-widget-wrap">
+                                    <div class="elementor-widget-wrap" >
                                         <div class="elementor-element elementor-element-9667819 watch-guide elementor-widget elementor-widget-heading" data-id="9667819" data-element_type="widget" data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h5 class="elementor-heading-title elementor-size-default">
@@ -260,5 +283,8 @@
             </div>
         </div>
     </div>
+
+
+
 
 @endsection

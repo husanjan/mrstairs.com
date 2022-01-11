@@ -2750,3 +2750,474 @@ body.elementor-page-15951 {
 body.elementor-page-1215 {
     padding: 0px 0px 0px 0px;
 }
+.whb-top-bar .wd-dropdown {
+    margin-top: 1px;
+}
+
+.whb-top-bar .wd-dropdown:after {
+    height: 11px;
+}
+
+
+.whb-header-bottom .wd-dropdown {
+    margin-top: 5px;
+}
+
+.whb-header-bottom .wd-dropdown:after {
+    height: 15px;
+}
+
+
+.whb-header .whb-header-bottom .wd-header-cats {
+    margin-top: -1px;
+    margin-bottom: -0px;
+    height: calc(100% + 1px);
+}
+
+
+@media (min-width: 1025px) {
+    .whb-top-bar-inner {
+        height: 42px;
+        max-height: 42px;
+    }
+
+    .whb-sticked .whb-top-bar-inner {
+        height: 40px;
+        max-height: 40px;
+    }
+
+    .whb-general-header-inner {
+        height: 104px;
+        max-height: 104px;
+    }
+
+    .whb-sticked .whb-general-header-inner {
+        height: 60px;
+        max-height: 60px;
+    }
+
+    .whb-header-bottom-inner {
+        height: 50px;
+        max-height: 50px;
+    }
+
+    .whb-sticked .whb-header-bottom-inner {
+        height: 50px;
+        max-height: 50px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .whb-top-bar-inner {
+        height: 40px;
+        max-height: 40px;
+    }
+
+    .whb-general-header-inner {
+        height: 60px;
+        max-height: 60px;
+    }
+
+
+
+}
+
+.whb-top-bar {
+    background-color: rgba(30, 116, 110, 1);
+}
+
+.whb-general-header {
+    border-color: rgba(129, 129, 129, 0.2);border-bottom-width: 1px;border-bottom-style: solid;
+}
+
+                                                    .wd-popup.wd-promo-popup{
+                                                        background-color:#111111;
+                                                        background-repeat:no-repeat;
+                                                        background-size:contain;
+                                                        background-position:left center;
+                                                    }
+
+.page-title-default{
+    background-color:#0a0a0a;
+    background-image: url(https://www.mrstairs.com/wp-content/uploads/2021/01/wide.jpg);
+    background-size:cover;
+    background-position:center center;
+}
+
+.footer-container{
+    background-color:#ffffff;
+}
+
+:root{
+    --wd-text-font:"Poppins", Arial, Helvetica, sans-serif;
+    --wd-text-font-weight:400;
+    --wd-text-color:#777777;
+    --wd-text-font-size:14px;
+}
+:root{
+    --wd-title-font:"Poppins", Arial, Helvetica, sans-serif;
+    --wd-title-font-weight:600;
+    --wd-title-color:#242424;
+}
+:root{
+    --wd-entities-title-font:"Lato", Arial, Helvetica, sans-serif;
+    --wd-entities-title-font-weight:500;
+    --wd-entities-title-color:#333333;
+    --wd-entities-title-color-hover:rgb(51 51 51 / 65%);
+}
+:root{
+    --wd-alternative-font:"Lato", Arial, Helvetica, sans-serif;
+}
+:root{
+    --wd-widget-title-font:"Poppins", Arial, Helvetica, sans-serif;
+    --wd-widget-title-font-weight:600;
+    --wd-widget-title-transform:uppercase;
+    --wd-widget-title-color:#333;
+    --wd-widget-title-font-size:16px;
+}
+:root{
+    --wd-header-el-font:"Lato", Arial, Helvetica, sans-serif;
+    --wd-header-el-font-weight:700;
+    --wd-header-el-transform:uppercase;
+    --wd-header-el-font-size:13px;
+}
+:root{
+    --wd-primary-color:#1f7872;
+}
+:root{
+    --wd-alternative-color:#fbbc34;
+}
+:root{
+    --wd-link-color:#333333;
+    --wd-link-color-hover:#242424;
+}
+:root{
+    --btn-default-bgcolor:#f7f7f7;
+}
+:root{
+    --btn-default-bgcolor-hover:#efefef;
+}
+:root{
+    --btn-shop-bgcolor:#1f7872;
+}
+:root{
+    --btn-shop-bgcolor-hover:#6ca300;
+}
+:root{
+    --btn-accent-bgcolor:#1f7872;
+}
+:root{
+    --btn-accent-bgcolor-hover:#6ca300;
+}
+:root{
+    --notices-success-bg:#459647;
+}
+:root{
+    --notices-success-color:#fff;
+}
+:root{
+    --notices-warning-bg:#E0B252;
+}
+:root{
+    --notices-warning-color:#fff;
+}
+:root{
+
+
+    --wd-form-brd-radius: 0px;
+
+    --wd-form-brd-width: 2px;
+
+    --btn-default-color: #333;
+    --btn-default-color-hover: #333;
+
+    --btn-shop-color: #fff;
+    --btn-shop-color-hover: #fff;
+
+    --btn-accent-color: #fff;
+    --btn-accent-color-hover: #fff;
+    --btn-default-brd-radius: 0px;
+    --btn-default-box-shadow: none;
+    --btn-default-box-shadow-hover: none;
+    --btn-default-box-shadow-active: none;
+    --btn-default-bottom: 0px;
+
+
+    --btn-accent-brd-radius: 0px;
+    --btn-accent-box-shadow: none;
+    --btn-accent-box-shadow-hover: none;
+    --btn-accent-box-shadow-active: none;
+    --btn-accent-bottom: 0px;
+
+
+    --btn-shop-bottom-active: -1px;
+    --btn-shop-brd-radius: 0px;
+    --btn-shop-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
+    --btn-shop-box-shadow-hover: inset 0 -2px 0 rgba(0, 0, 0, .15);
+
+
+
+
+
+
+
+}
+
+/* Site width */
+/* Header Boxed */
+@media (min-width: 1025px) {
+    .whb-boxed:not(.whb-sticked):not(.whb-full-width) .whb-main-header {
+        max-width: 1192px;
+    }
+}
+
+.container {
+    max-width: 1222px;
+}
+
+
+@media (min-width: 1222px) {
+
+    [data-vc-full-width]:not([data-vc-stretch-content]) {
+        padding-left: calc((100vw - 1222px) / 2);
+        padding-right: calc((100vw - 1222px) / 2);
+    }
+
+    .platform-Windows [data-vc-full-width]:not([data-vc-stretch-content]) {
+        padding-left: calc((100vw - 1239px) / 2);
+        padding-right: calc((100vw - 1239px) / 2);
+    }
+}
+
+
+/* Quick view */
+div.wd-popup.popup-quick-view {
+    max-width: 920px;
+}
+
+/* Shop popup */
+div.wd-popup.wd-promo-popup {
+    max-width: 800px;
+}
+
+/* Age verify */
+div.wd-popup.wd-age-verify {
+    max-width: 500px;
+}
+
+/* Header Banner */
+.header-banner {
+    height: 40px;
+}
+
+body.header-banner-display .website-wrapper {
+    margin-top:40px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    /* header Banner */
+    .header-banner {
+        height: 40px;
+    }
+
+    body.header-banner-display .website-wrapper {
+        margin-top:40px;
+    }
+}
+
+.woodmart-woocommerce-layered-nav .wd-scroll-content {
+    max-height: 280px;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "woodmart-font";
+    src: url("//www.mrstairs.com/wp-content/themes/woodmart/fonts/woodmart-font.woff2?v=6.1.4") format("woff2"),
+    url("//www.mrstairs.com/wp-content/themes/woodmart/fonts/woodmart-font.woff?v=6.1.4") format("woff");
+}
+
+.whb-top-bar {
+    background-color: rgba(31, 120, 114, 1);
+    border-bottom-style: solid;
+}
+
+.woodmart-pf-dropdown .filter-swatch>span, .woodmart-woocommerce-layered-nav .filter-swatch>span {
+    background-position: -21px 0;
+}
+
+
+.gdpr.gdpr-privacy-bar .gdpr-wrapper {
+    padding: 30px !important
+}
+
+.gdpr.gdpr-privacy-bar {
+    max-width: 710px;
+    left: 40% !important;
+    -webkit-transform: translate(-50%, 0) !important;
+    transform: translate(-50%, 0) !important
+}
+
+.gdpr.gdpr-privacy-bar .gdpr-preferences, .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-content p {
+    font-size: 12px !important
+}
+
+.gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-close {
+    background: 0 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+@media screen and (min-width: 1440px) {
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-content {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 0 100px 0 0;
+        text-align: left
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-content {
+        padding-right: 0;
+        padding-bottom: 20px
+    }
+
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-cookie-categories {
+        padding: 0 0 10px;
+        margin: 0 0 20px;
+        border-right: none;
+        border-bottom: 1px solid gray;
+        text-align: center
+    }
+
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-cookie-categories .gdpr-cookie-categories-item {
+        padding-top: 0
+    }
+}
+
+.gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-cookie-categories .gdpr-cookie-categories-item * {
+    float: left
+}
+
+.gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-cookie-categories .gdpr-cookie-categories-item input {
+    margin-top: 4px
+}
+
+.gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-cookie-categories .gdpr-cookie-categories-item label {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 14px
+}
+
+@media screen and (max-width: 640px) {
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-cookie-categories {
+        margin-bottom: 5px
+    }
+
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-buttons button.gdpr-preferences {
+        margin: 0 0 10px 15px
+    }
+
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-buttons button.gdpr-preferences:before {
+        left: -7px
+    }
+}
+
+.gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-buttons button.gdpr-agreement {
+    margin: 0 10px;
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
+@media screen and (min-width: 1440px) {
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-right .gdpr-buttons button.gdpr-agreement {
+        margin: 0 0 0 10px
+    }
+}
+
+@media (min-width: 376px) {
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-content {
+        -webkit-box-flex: 1 !important;
+        -ms-flex: 1 !important;
+        flex: 1 !important;
+        padding: 0 100px 0 0 !important;
+        text-align: left !important
+    }
+
+    .gdpr.gdpr-privacy-bar .gdpr-wrapper {
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important
+    }
+}
+@media (min-width: 1025px) {
+    div.whb-main-header:not(.whb-sticked) .woodmart-navigation .item-level-0>a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    div.whb-main-header.whb-sticked .woodmart-navigation .item-level-0>a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    div.whb-main-header:not(.whb-sticked) .woodmart-navigation .item-level-0>a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    div.whb-main-header.whb-sticked .woodmart-navigation .item-level-0>a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+#modalContainer{
+
+
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
