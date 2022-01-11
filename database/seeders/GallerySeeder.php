@@ -26,7 +26,6 @@ class GallerySeeder extends Seeder
             'https://www.mrstairs.com/wp-content/uploads/2018/12/IMG_0622-min.jpg',
             'https://www.mrstairs.com/wp-content/uploads/2018/12/IMG_0626-min.jpg',
             'https://www.mrstairs.com/wp-content/uploads/2018/12/IMG_0630-min.jpg',
-            ''
         ],
         'Cut string' => [
             "https://www.mrstairs.com/wp-content/uploads/2018/12/Pars-Joinery-Staircase-min.jpg",
