@@ -55,7 +55,6 @@ class GallerySeeder extends Seeder
         ],
         'Straight staircase' => [
             'https://www.mrstairs.com/wp-content/uploads/2018/12/Pars-Joinery-Staircase-min.jpg',
-            ''
         ],
         'Half turn' => [
             'https://www.mrstairs.com/wp-content/uploads/2018/12/IMG_0630-min.jpg',
