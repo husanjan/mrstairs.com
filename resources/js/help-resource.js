@@ -14,4 +14,12 @@ $(function () {
             $('#' + contentContainer).show('slow');
         }
     });
+
+    $("#stairBuilderUserGuide").on("click", function () {
+        $("#stairBuilderUserGuideModal").show();
+    });
+
+    $(".close, .bootbox-accept").on("click", function () {
+        $("#stairBuilderUserGuideModal").hide();
+    });
 });
