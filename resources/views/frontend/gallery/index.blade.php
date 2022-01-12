@@ -1,5 +1,6 @@
 @extends('layouts.frontend.app')
-
+{{--=====Menu active clasess=====--}}
+@section('gallery-menu-classes', ' current-menu-item')
 @section('styles')
     <link href="{{ asset('css/gallery.css') }}" rel="stylesheet">
     <link

@@ -1,5 +1,6 @@
 @extends('layouts.frontend.app')
-
+{{--=====Menu active clasess=====--}}
+@section('contact-menu-classes', ' current-menu-item')
 @section('content')
 <div class="row">
 	<div class="container-fluid">
@@ -198,7 +199,7 @@
 																	style="font-size: 14.6667px;"><a
 																		href="https://api.whatsapp.com/send?phone={{ config('company.whatsapp') }}&amp;text=MrStairs.com%20Web%20Contact"
 																		target="_blank" rel="noopener">
-																		+{{ config('company.whatsapp') }}	
+																		+{{ config('company.whatsapp') }}
 																	</a></span></span></p>
 														<p><span style="font-family: Calibri, sans-serif;">Email:
 															</span><a
@@ -214,7 +215,7 @@
 														</p>
 														<p><span
 																style="font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-GB; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">
-															{{ config('company.open_hours') }}	
+															{{ config('company.open_hours') }}
 															</span></p>
 														<p><i> Please contact us at least 24 hours before collection to
 																arrange a time.</i><span

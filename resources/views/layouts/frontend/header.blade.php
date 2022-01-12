@@ -91,11 +91,26 @@
                     </div>
                     <div class="whb-column whb-col-right whb-visible-lg">
                         <div class="wd-header-my-account wd-tools-element wd-event-hover  wd-account-style-text my-account-with-text woodmart-header-links woodmart-navigation item-event-hover menu-simple-dropdown">
-                            <a href="https://www.mrstairs.com/my-account/" title="My account">
+
+                            @guest
+                                @if (Route::has('login'))
+                                <a href="login" title="My account">
+			                <span class="wd-tools-icon">
+							        </span>
+                                    <span class="wd-tools-text">
+				                Login / Register			</span>
+                                </a>
+                                @endif
+                        </div>
+
+                        <div class="wd-header-my-account wd-tools-element wd-event-hover  wd-account-style-text my-account-with-text woodmart-header-links woodmart-navigation item-event-hover menu-simple-dropdown">
+                            @else <a href="https://www.mrstairs.com/my-account/" title="My account">
 			<span class="wd-tools-icon">
 							</span>
                                 <span class="wd-tools-text">
-				My Account			</span>
+			   {{ Auth::user()->name }}
+
+                                </span>
                             </a>
 
 
@@ -120,8 +135,10 @@
                                         <a href="https://www.mrstairs.com/my-account/customer-logout/?_wpnonce=b2ed06cb46"><span>Logout</span></a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>@endguest
                         </div>
+
+
                         <div class="wd-header-search wd-tools-element wd-display-full-screen search-button" title="Search">
                             <a href="javascript:void(0);">
 		<span class="wd-tools-icon search-button-icon">
@@ -197,22 +214,22 @@
                     <div class="whb-column whb-col-left whb-visible-lg">
                         <div class="wd-header-nav wd-header-main-nav text-left navigation-style-default" role="navigation">
                             <ul id="menu-main-menu" class="menu wd-nav wd-nav-main wd-style-default">
-                                <li id="menu-item-1074" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1074 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
+                                <li id="menu-item-1074" class=" @yield('home-menu-classes') menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1074 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
                                     <a href="/" class="woodmart-nav-link"><span class="nav-link-text">Home</span></a>
                                 </li>
                                 <li id="menu-item-1076" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1076 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
                                     <a href="https://www.mrstairs.com/stair-builder/choose-staircase-type/" class="woodmart-nav-link"><span class="nav-link-text">Stair Builder</span></a>
                                 </li>
-                                <li id="menu-item-3073" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3073 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
+                                <li id="menu-item-3073" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-3073 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
                                     <a href="https://shop.mrstairs.com" class="woodmart-nav-link"><span class="nav-link-text">Stair Parts Shop</span></a>
                                 </li>
-                                <li id="menu-item-1077" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-688 current_page_item menu-item-1077 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
-                                    <a href="/help-resources" class="woodmart-nav-link"><span class="nav-link-text">Help &#038; Resources</span></a>
+                                <li id="menu-item-1077" class="@yield('help-menu-classes')  menu-item menu-item-type-post_type menu-item-object-page  page_item page-item-688 current_page_item menu-item-1077 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
+                                    <a href="/help-resources" class="   woodmart-nav-link"><span class="nav-link-text">Help &#038; Resources</span></a>
                                 </li>
-                                <li id="menu-item-2288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2288 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
+                                <li id="menu-item-2288" class=" @yield('gallery-menu-classes') menu-item menu-item-type-post_type menu-item-object-page menu-item-2288 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
                                     <a href="/gallery" class="woodmart-nav-link"><span class="nav-link-text">Gallery</span></a>
                                 </li>
-                                <li id="menu-item-1078" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1078 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
+                                 <li id="menu-item-1078"class="@yield('contact-menu-classes') menu-item menu-item-type-post_type menu-item-object-page menu-item-1078 item-level-0 menu-item-design-default menu-simple-dropdown wd-event-hover">
                                     <a href="/contact" class="woodmart-nav-link"><span class="nav-link-text">Contact Us</span></a>
                                 </li>
                             </ul>
