@@ -29,8 +29,6 @@
     <meta name="twitter:site" content="@mr_stairs"/>
     <script type="application/ld+json" class="yoast-schema-graph">
         {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.mrstairs.com/#website","url":"https://www.mrstairs.com/","name":"MrStairs \u00ae","description":"UK&#039;s #1 Staircase Manufacturer | Owned and Operated by a Family of Master Carpenters","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.mrstairs.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"https://www.mrstairs.com/help-resources/#primaryimage","inLanguage":"en-GB","url":"https://mrstairs.com/wp-content/uploads/2019/02/faq-100x100.png","contentUrl":"https://mrstairs.com/wp-content/uploads/2019/02/faq-100x100.png"},{"@type":"WebPage","@id":"https://www.mrstairs.com/help-resources/#webpage","url":"https://www.mrstairs.com/help-resources/","name":"MrStairs \u00ae - UK's #1 Staircase Manufacturer - Help & Resources","isPartOf":{"@id":"https://www.mrstairs.com/#website"},"primaryImageOfPage":{"@id":"https://www.mrstairs.com/help-resources/#primaryimage"},"datePublished":"2018-10-30T08:27:37+00:00","dateModified":"2019-08-22T14:28:09+00:00","description":"Frequently Asked Questions | Delivery Information | How Will My Stairs Arrive? | Rules & Regulations | Measuring Your Stairs | Staircase Terminology | Fitting Guide","breadcrumb":{"@id":"https://www.mrstairs.com/help-resources/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.mrstairs.com/help-resources/"]}]},{"@type":"BreadcrumbList","@id":"https://www.mrstairs.com/help-resources/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mrstairs.com/"},{"@type":"ListItem","position":2,"name":"Help &#038; Resources"}]}]}
-
-
     </script>
 
     <!-- Scripts -->
@@ -40,9 +38,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Another styles -->
-@yield('styles')
+    @yield('styles')
 
-<!-- Fonts -->
+    <!-- Fonts -->
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/woodmart/fonts/woodmart-font.woff?v=5.3.6" crossorigin>
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/mrstairs/fonts/roboto-v19-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/mrstairs/fonts/roboto-v19-latin-500.woff2" crossorigin>
@@ -58,14 +56,15 @@
 
 <body class="page-template page-template-elementor_header_footer page page-id-688 logged-in theme-woodmart woocommerce-no-js wrapper-full-width  form-style-square  form-border-width-2 categories-accordion-on woodmart-ajax-shop-on offcanvas-sidebar-mobile offcanvas-sidebar-tablet notifications-sticky elementor-default elementor-template-full-width elementor-kit-15149 elementor-page elementor-page-688">
 
-<div class="website-wrapper">
+
+<div class="website-wrapper"> <!-- start wrapper -->
 
 
     <!-- HEADER -->
 
-@include('header')
+    @include('header')
 
-<!--END MAIN HEADER-->
+    <!--END MAIN HEADER-->
 
     <div class="main-page-wrapper p-0 m-0">
 
@@ -85,29 +84,63 @@
 
         <div class="row">
             <div class="container-fluid">
-                <div data-elementor-type="wp-page" data-elementor-id="688" class="elementor elementor-688" data-elementor-settings="[]">
+                <div
+                        class="elementor elementor-688"
+                >
                     <div class="elementor-inner">
+
                         <div class="elementor-section-wrap">
-                            <section class="elementor-element elementor-element-86728b9 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="86728b9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+
+                            <section
+                                    class="elementor-element elementor-element-86728b9 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section"
+                            >
                                 <div class="elementor-container elementor-column-gap-default">
+
                                     <div class="elementor-row">
-                                        <div class="elementor-element elementor-element-2740d0f container elementor-column elementor-col-100 elementor-top-column" data-id="2740d0f" data-element_type="column">
-                                            <div class="elementor-column-wrap  elementor-element-populated">
+
+                                        <div
+                                                class="elementor-element elementor-element-2740d0f container elementor-column elementor-col-100 elementor-top-column"
+                                        >
+                                            <div
+                                                    class="elementor-column-wrap  elementor-element-populated"
+                                            >
+
                                                 <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-dadf584 elementor-widget elementor-widget-heading" data-id="dadf584" data-element_type="widget" data-widget_type="heading.default">
+
+                                                    <div
+                                                            class="elementor-element elementor-element-dadf584 elementor-widget elementor-widget-heading"
+                                                    >
                                                         <div class="elementor-widget-container">
-                                                            <h2 class="elementor-heading-title elementor-size-default">
-                                                                Still have unanswered questions?</h2></div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-613c27a elementor-widget elementor-widget-text-editor" data-id="613c27a" data-element_type="widget" data-widget_type="text-editor.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-text-editor elementor-clearfix"><p>
-                                                                    <a style="background-color: #fcfdff; font-size: 1rem;" href="https://mrstairs.com/contact" target="_blank" rel="noopener">Get
-                                                                        in touch</a> with our friendly support team who
-                                                                    will be able to help you with any queries<br/>that
-                                                                    you may have.</p></div>
+
+                                                            <h2
+                                                                    class="elementor-heading-title elementor-size-default"
+                                                            >
+                                                                Still have unanswered questions?
+                                                            </h2>
                                                         </div>
                                                     </div>
+
+                                                    <div
+                                                            class="elementor-element elementor-element-613c27a elementor-widget elementor-widget-text-editor"
+                                                    >
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-text-editor elementor-clearfix">
+                                                                <p>
+                                                                    <a
+                                                                            style="background-color: #fcfdff; font-size: 1rem;"
+                                                                            href="/contact"
+                                                                            target="_blank"
+                                                                            rel="noopener"
+                                                                    >
+                                                                        Get in touch
+                                                                    </a> with our friendly support team who
+                                                                    will be able to help you with any queries<br/>
+                                                                    that you may have.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -124,53 +157,93 @@
     @include('footer')
 
 </div> <!-- end wrapper -->
+
 <div class="wd-close-side woodmart-close-side"></div>
+
 <a href="#" class="scrollToTop"></a>
 
 <div class="mobile-nav wd-side-hidden wd-left wd-left">
     <div class="wd-search-form woodmart-search-form">
-        <form role="search" method="get" class="searchform  woodmart-ajax-search" action="https://www.mrstairs.com/" data-thumbnail="1" data-price="1" data-post_type="post" data-count="20" data-sku="0" data-symbols_count="3">
-            <input type="text" class="s" placeholder="Search for posts" value="" name="s" aria-label="Search" title="Search for posts"/>
+        <form
+                role="search"
+                method="get"
+                class="searchform  woodmart-ajax-search"
+                action="https://www.mrstairs.com/"
+                data-thumbnail="1"
+                data-price="1"
+                data-post_type="post"
+                data-count="20"
+                data-sku="0"
+                data-symbols_count="3"
+        >
+            <input
+                    type="text"
+                    class="s"
+                    placeholder="Search for posts"
+                    value=""
+                    name="s"
+                    aria-label="Search"
+                    title="Search for posts"
+            />
             <input type="hidden" name="post_type" value="post">
+
             <button type="submit" class="searchsubmit">
-						<span>
-							Search						</span>
+                <span>Search</span>
             </button>
         </form>
         <div class="search-results-wrapper">
             <div class="wd-dropdown-results wd-scroll wd-dropdown woodmart-search-results">
                 <div class="wd-scroll-content"></div>
             </div>
-
         </div>
     </div>
+
     <ul class="wd-nav wd-nav-mob-tab wd-style-underline mobile-menu-tab mobile-nav-tabs">
         <li class="mobile-tab-title mobile-pages-title  wd-active" data-menu="pages">
-            <a href="#" rel="nofollow noopener"><span class="nav-link-text">Menu</span></a></li>
+            <a href="#" rel="nofollow noopener"><span class="nav-link-text">Menu</span></a>
+        </li>
+
         <li class="mobile-tab-title mobile-categories-title " data-menu="categories">
-            <a href="#" rel="nofollow noopener"><span class="nav-link-text">Categories</span></a></li>
+            <a href="#" rel="nofollow noopener"><span class="nav-link-text">Categories</span></a>
+        </li>
     </ul>
-    <div class="create-nav-msg">Set your categories menu in Theme Settings -&gt; Header -&gt; Menu -&gt; Mobile menu
-        (categories)
+
+    <div class="create-nav-msg">
+        Set your categories menu in Theme Settings -&gt; Header -&gt; Menu -&gt; Mobile menu (categories)
     </div>
-    <ul id="menu-main-menu-1" class="mobile-pages-menu wd-nav wd-nav-mobile wd-active site-mobile-menu">
+
+    <ul
+            id="menu-main-menu-1"
+            class="mobile-pages-menu wd-nav wd-nav-mobile wd-active site-mobile-menu"
+    >
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1074 item-level-0">
             <a href="https://www.mrstairs.com/" class="woodmart-nav-link"><span class="nav-link-text">Home</span></a>
         </li>
+
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1076 item-level-0">
-            <a href="https://www.mrstairs.com/stair-builder/choose-staircase-type/" class="woodmart-nav-link"><span class="nav-link-text">Stair Builder</span></a>
+            <a href="https://www.mrstairs.com/stair-builder/choose-staircase-type/" class="woodmart-nav-link">
+                <span class="nav-link-text">Stair Builder</span>
+            </a>
         </li>
         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3073 item-level-0">
-            <a href="https://shop.mrstairs.com" class="woodmart-nav-link"><span class="nav-link-text">Stair Parts Shop</span></a>
+            <a href="https://shop.mrstairs.com" class="woodmart-nav-link">
+                <span class="nav-link-text">Stair Parts Shop</span>
+            </a>
         </li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-688 current_page_item menu-item-1077 item-level-0">
-            <a href="https://www.mrstairs.com/help-resources/" class="woodmart-nav-link"><span class="nav-link-text">Help &#038; Resources</span></a>
+            <a href="https://www.mrstairs.com/help-resources/" class="woodmart-nav-link">
+                <span class="nav-link-text">Help &#038; Resources</span>
+            </a>
         </li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2288 item-level-0">
-            <a href="https://www.mrstairs.com/gallery/" class="woodmart-nav-link"><span class="nav-link-text">Gallery</span></a>
+            <a href="https://www.mrstairs.com/gallery/" class="woodmart-nav-link">
+                <span class="nav-link-text">Gallery</span>
+            </a>
         </li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1078 item-level-0">
-            <a href="https://www.mrstairs.com/contact/" class="woodmart-nav-link"><span class="nav-link-text">Contact Us</span></a>
+            <a href="https://www.mrstairs.com/contact/" class="woodmart-nav-link">
+                <span class="nav-link-text">Contact Us</span>
+            </a>
         </li>
     </ul>
 </div><!--END MOBILE-NAV-->
@@ -188,16 +261,42 @@
 </div>
 
 <div class="wd-search-full-screen wd-fill woodmart-search-full-screen">
-    <span class="wd-close-search wd-action-btn wd-style-icon wd-cross-icon woodmart-close-search"><a></a></span>
-    <form role="search" method="get" class="searchform  woodmart-ajax-search" action="https://www.mrstairs.com/" data-thumbnail="1" data-price="1" data-post_type="post" data-count="20" data-sku="0" data-symbols_count="3">
-        <input type="text" class="s" placeholder="Search for posts" value="" name="s" aria-label="Search" title="Search for posts"/>
+    <span class="wd-close-search wd-action-btn wd-style-icon wd-cross-icon woodmart-close-search">
+        <a></a>
+    </span>
+
+    <form
+            role="search"
+            method="get"
+            class="searchform  woodmart-ajax-search"
+            action="https://www.mrstairs.com/"
+            data-thumbnail="1"
+            data-price="1"
+            data-post_type="post"
+            data-count="20"
+            data-sku="0"
+            data-symbols_count="3"
+    >
+        <input
+                type="text"
+                class="s"
+                placeholder="Search for posts"
+                value=""
+                name="s"
+                aria-label="Search"
+                title="Search for posts"
+        />
+
         <input type="hidden" name="post_type" value="post">
         <button type="submit" class="searchsubmit">
-						<span>
-							Search						</span>
+            <span>Search</span>
         </button>
     </form>
-    <div class="search-info-text"><span>Start typing to see posts you are looking for.</span></div>
+
+    <div class="search-info-text">
+        <span>Start typing to see posts you are looking for.</span>
+    </div>
+
     <div class="search-results-wrapper">
         <div class="wd-dropdown-results wd-scroll woodmart-search-results">
             <div class="wd-scroll-content"></div>
@@ -213,6 +312,7 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
 ></script>
+
 <script src='//www.mrstairs.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
 <script src='//www.mrstairs.com/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
 <script src='//www.mrstairs.com/wp-includes/js/jquery/ui/mouse.min.js' id='jquery-ui-mouse-js'></script>

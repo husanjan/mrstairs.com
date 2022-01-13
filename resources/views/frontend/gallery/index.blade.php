@@ -30,7 +30,7 @@
                                 <div class="elementor-column-wrap  elementor-element-populated">
                                     <div class="elementor-widget-wrap">
                                         <div class="elementor-element elementor-element-bda6be9 elementor-widget elementor-widget-text-editor"
-                                            data-id="bda6be9" data-element_type="widget" data-widget_type="text-editor.default">
+                                             data-id="bda6be9" data-element_type="widget" data-widget_type="text-editor.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-text-editor elementor-clearfix">
                                                     <!-- CSS Part Start From Here-->
