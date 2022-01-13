@@ -1,8 +1,7 @@
 @extends('layouts.frontend.app')
 
 @section('title', 'Fitting Guide')
-{{--=====Menu active clasess=====--}}
-@section('help-menu-classes', ' current-menu-item')
+
 @section('styles')
     <link href="{{ asset('css/help-resource.css') }}" rel="stylesheet">
 

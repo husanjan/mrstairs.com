@@ -54,10 +54,10 @@
                     <div class="menu-footer-menu-container">
                         <ul id="menu-footer-menu" class="menu">
                             <li id="menu-item-15978" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15978">
-                                <a href="https://www.mrstairs.com/delivery-information/">Delivery Information</a>
+                                <a href="/delivery-information">Delivery Information</a>
                             </li>
                             <li id="menu-item-15979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-15979">
-                                <a href="https://www.mrstairs.com/privacy-policy/">Privacy Policy</a></li>
+                                <a href="/privacy-policy">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>

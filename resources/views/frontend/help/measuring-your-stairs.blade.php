@@ -1,6 +1,5 @@
 @extends('layouts.frontend.app')
-{{--=====Menu active clasess=====--}}
-@section('help-menu-classes', ' current-menu-item')
+
 @section('title', 'Measuring Your Stairs')
 
 @section('styles')
