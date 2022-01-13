@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
 use App\Models\GalleryItem;
 use App\Models\GalleryItemCategory;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 /**
  * Class GalleryController

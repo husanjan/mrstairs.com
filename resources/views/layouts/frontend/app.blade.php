@@ -29,6 +29,8 @@
     <meta name="twitter:site" content="@mr_stairs"/>
     <script type="application/ld+json" class="yoast-schema-graph">
         {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.mrstairs.com/#website","url":"https://www.mrstairs.com/","name":"MrStairs \u00ae","description":"UK&#039;s #1 Staircase Manufacturer | Owned and Operated by a Family of Master Carpenters","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.mrstairs.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"https://www.mrstairs.com/help-resources/#primaryimage","inLanguage":"en-GB","url":"https://mrstairs.com/wp-content/uploads/2019/02/faq-100x100.png","contentUrl":"https://mrstairs.com/wp-content/uploads/2019/02/faq-100x100.png"},{"@type":"WebPage","@id":"https://www.mrstairs.com/help-resources/#webpage","url":"https://www.mrstairs.com/help-resources/","name":"MrStairs \u00ae - UK's #1 Staircase Manufacturer - Help & Resources","isPartOf":{"@id":"https://www.mrstairs.com/#website"},"primaryImageOfPage":{"@id":"https://www.mrstairs.com/help-resources/#primaryimage"},"datePublished":"2018-10-30T08:27:37+00:00","dateModified":"2019-08-22T14:28:09+00:00","description":"Frequently Asked Questions | Delivery Information | How Will My Stairs Arrive? | Rules & Regulations | Measuring Your Stairs | Staircase Terminology | Fitting Guide","breadcrumb":{"@id":"https://www.mrstairs.com/help-resources/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.mrstairs.com/help-resources/"]}]},{"@type":"BreadcrumbList","@id":"https://www.mrstairs.com/help-resources/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mrstairs.com/"},{"@type":"ListItem","position":2,"name":"Help &#038; Resources"}]}]}
+
+
     </script>
 
     <!-- Scripts -->
@@ -38,9 +40,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Another styles -->
-    @yield('styles')
+@yield('styles')
 
-    <!-- Fonts -->
+<!-- Fonts -->
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/woodmart/fonts/woodmart-font.woff?v=5.3.6" crossorigin>
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/mrstairs/fonts/roboto-v19-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" href="https://www.mrstairs.com/wp-content/themes/mrstairs/fonts/roboto-v19-latin-500.woff2" crossorigin>
@@ -62,9 +64,9 @@
 
     <!-- HEADER -->
 
-    @include('header')
+@include('header')
 
-    <!--END MAIN HEADER-->
+<!--END MAIN HEADER-->
 
     <div class="main-page-wrapper p-0 m-0">
 
@@ -82,76 +84,81 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="container-fluid">
-                <div
-                        class="elementor elementor-688"
-                >
-                    <div class="elementor-inner">
+        @empty($disableQuestions)
 
-                        <div class="elementor-section-wrap">
+            <div class="row">
+                <div class="container-fluid">
+                    <div
+                            class="elementor elementor-688"
+                    >
+                        <div class="elementor-inner">
 
-                            <section
-                                    class="elementor-element elementor-element-86728b9 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section"
-                            >
-                                <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-section-wrap">
 
-                                    <div class="elementor-row">
+                                <section
+                                        class="elementor-element elementor-element-86728b9 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section"
+                                >
+                                    <div class="elementor-container elementor-column-gap-default">
 
-                                        <div
-                                                class="elementor-element elementor-element-2740d0f container elementor-column elementor-col-100 elementor-top-column"
-                                        >
+                                        <div class="elementor-row">
+
                                             <div
-                                                    class="elementor-column-wrap  elementor-element-populated"
+                                                    class="elementor-element elementor-element-2740d0f container elementor-column elementor-col-100 elementor-top-column"
                                             >
+                                                <div
+                                                        class="elementor-column-wrap  elementor-element-populated"
+                                                >
 
-                                                <div class="elementor-widget-wrap">
+                                                    <div class="elementor-widget-wrap">
 
-                                                    <div
-                                                            class="elementor-element elementor-element-dadf584 elementor-widget elementor-widget-heading"
-                                                    >
-                                                        <div class="elementor-widget-container">
+                                                        <div
+                                                                class="elementor-element elementor-element-dadf584 elementor-widget elementor-widget-heading"
+                                                        >
+                                                            <div class="elementor-widget-container">
 
-                                                            <h2
-                                                                    class="elementor-heading-title elementor-size-default"
-                                                            >
-                                                                Still have unanswered questions?
-                                                            </h2>
-                                                        </div>
-                                                    </div>
-
-                                                    <div
-                                                            class="elementor-element elementor-element-613c27a elementor-widget elementor-widget-text-editor"
-                                                    >
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-text-editor elementor-clearfix">
-                                                                <p>
-                                                                    <a
-                                                                            style="background-color: #fcfdff; font-size: 1rem;"
-                                                                            href="/contact"
-                                                                            target="_blank"
-                                                                            rel="noopener"
-                                                                    >
-                                                                        Get in touch
-                                                                    </a> with our friendly support team who
-                                                                    will be able to help you with any queries<br/>
-                                                                    that you may have.
-                                                                </p>
+                                                                <h2
+                                                                        class="elementor-heading-title elementor-size-default"
+                                                                >
+                                                                    Still have unanswered questions?
+                                                                </h2>
                                                             </div>
                                                         </div>
-                                                    </div>
 
+                                                        <div
+                                                                class="elementor-element elementor-element-613c27a elementor-widget elementor-widget-text-editor"
+                                                        >
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-text-editor elementor-clearfix">
+                                                                    <p>
+                                                                        <a
+                                                                                style="background-color: #fcfdff; font-size: 1rem;"
+                                                                                href="/contact"
+                                                                                target="_blank"
+                                                                                rel="noopener"
+                                                                        >
+                                                                            Get in touch
+                                                                        </a> with our friendly support team who
+                                                                        will be able to help you with any queries<br/>
+                                                                        that you may have.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
+                                </section>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div><!-- .main-page-wrapper -->
-        </div> <!-- end row -->
+                </div><!-- .main-page-wrapper -->
+            </div> <!-- end row -->
+
+        @endempty
+
     </div> <!-- end container -->
 
     @include('footer')

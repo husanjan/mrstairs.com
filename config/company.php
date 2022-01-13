@@ -1,14 +1,15 @@
 <?php
 
 return [
-    'whatsapp' => '44 7897 486 314',
+    'whatsapp' => '447897486314',
     'open_hours' => 'Mon – Fri   8:00am – 5:00pm',
-    'email' => 'sales@mrstairs.com',
+    'salesEmail' => 'sales@mrstairs.com',
+    'contactEmail' => 'contact@mrstairs.com',
     'phone' => '0208 004 8656',
     'address' => [
-        'region' => 'Unit 8 Midas Business Centre',
-        'region1' => 'Wantz Road',
-        'region2' => 'Dagenham, RM10 8PS'
-    ]
-    //'Unit 8 Midas Business Centre, Wantz Road, Dagenham, RM10 8PS'
+        'town' => 'Dagenham',
+        'street' => 'Wantz Road',
+        'postcode' => 'RM10 8PS',
+        'building' => 'Unit 8 Midas Business Centre',
+    ],
 ];

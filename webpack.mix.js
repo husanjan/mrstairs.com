@@ -21,4 +21,5 @@ mix
     .css('resources/css/login.css', 'public/css')
     .css('resources/css/register.css', 'public/css')
     .css('resources/css/help-resource.css', 'public/css')
-    .css('resources/css/gallery.css', 'public/css');
+    .css('resources/css/gallery.css', 'public/css')
+    .css('resources/css/contact.css', 'public/css');

@@ -7,16 +7,40 @@
                     <div class="textwidget">
                         <div style="line-height: 2;">
                             <i class="fa fa-location-arrow" style="width: 15px; text-align: center; margin-right: 4px; color: #676767;"></i>
-                            Unit 8 Midas Business Centre, Wantz Road, Dagenham, RM10 8PS<br/>
+
+                            {{config('company.address.building')}},
+                            {{config('company.address.street')}},
+                            {{config('company.address.town')}},
+                            {{config('company.address.postcode')}}
+                            <br/>
+
                             <i class="fa fa-mobile" style="width: 15px; text-align: center; margin-right: 4px; color: #676767;"></i>
-                            Phone: <a href="tel: 0208 004 8656">0208 004 8656</a></div>
+
+                            Phone:
+                            <a
+                                    href="tel: {{config('company.phone')}}"
+                            >
+                                {{config('company.phone')}}
+                            </a>
+                        </div>
                         <div>
                             <i class="fa fa-mobile" style="width: 15px; text-align: center; margin-right: 4px; color: #676767;"></i>
                             WhatsApp:
-                            <a href="https://api.whatsapp.com/send?phone=447897486314&amp;text=MrStairs.com%20Web%20Contact">+44
-                                7897 486 314</a></div>
-                        <div style="line-height: 2;">Email:
-                            <a href="mailto:sales@mrstairs.com">sales@mrstairs.com</a></div>
+                            <a
+                                    href="https://api.whatsapp.com/send?phone={{config('company.whatsapp')}}&amp;text=MrStairs.com%20Web%20Contact"
+                            >
+                                +{{config('company.whatsapp')}}
+                            </a>
+                        </div>
+
+                        <div style="line-height: 2;">
+                            Email:
+                            <a
+                                    href="mailto:{{config('company.salesEmail')}}"
+                            >
+                                {{config('company.salesEmail')}}
+                            </a>
+                        </div>
                         <div></div>
                     </div>
                 </div>

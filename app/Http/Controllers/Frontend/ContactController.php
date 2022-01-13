@@ -19,7 +19,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('frontend.contact.new');
+        return view('frontend.contact.index');
     }
 
     /**
@@ -29,7 +29,7 @@ class ContactController extends Controller
      */
     public function sendEmail(ContactRequest $request)
     {
-        Mail::to('contact@mrstairs.com')->send(new ContactMail);
+        Mail::to(config('company.contactEmail'))->send(new ContactMail);
 
         return back();
     }
