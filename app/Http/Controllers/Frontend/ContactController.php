@@ -2,19 +2,31 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Frontend\ContactRequest;
 use App\Mail\ContactMail;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\Frontend\ContactRequest;
 
+/**
+ * Class ContactController
+ *
+ * @package App\Http\Controllers\Frontend
+ */
 class ContactController extends Controller
 {
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function index()
     {
-        return view('frontend.contact.index');
+        return view('frontend.contact.new');
     }
 
+    /**
+     * @param \App\Http\Requests\Frontend\ContactRequest $request
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function sendEmail(ContactRequest $request)
     {
         Mail::to('contact@mrstairs.com')->send(new ContactMail);
