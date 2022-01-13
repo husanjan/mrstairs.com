@@ -38,7 +38,7 @@ class GallerySeeder extends Seeder
             'https://www.mrstairs.com/wp-content/uploads/2019/04/pine1-b.jpg',
             'https://www.mrstairs.com/wp-content/uploads/2019/04/Pine6-b.jpg',
             'https://www.mrstairs.com/wp-content/uploads/2019/04/Pine6-c.jpg',
-            'https://www.mrstairs.com/wp-content/uploads/2019/04/Pine6-a.jpg'
+            'https://www.mrstairs.com/wp-content/uploads/2019/04/Pine6-a.jpg',
         ],
         'Quarter turn' => [
             "https://www.mrstairs.com/wp-content/uploads/2018/12/2018-02-25-10.08.08-min.jpg",
@@ -50,7 +50,7 @@ class GallerySeeder extends Seeder
             'https://www.mrstairs.com/wp-content/uploads/2018/12/IMG-20140722-WA0000-min.jpg',
             'https://www.mrstairs.com/wp-content/uploads/2018/12/IMG_0622-min.jpg',
             'https://www.mrstairs.com/wp-content/uploads/2018/12/IMG_0626-min.jpg',
-            'https://www.mrstairs.com/wp-content/uploads/2019/04/Pine6-a.jpg'
+            'https://www.mrstairs.com/wp-content/uploads/2019/04/Pine6-a.jpg',
         ],
         'Straight staircase' => [
             'https://www.mrstairs.com/wp-content/uploads/2018/12/Pars-Joinery-Staircase-min.jpg',
@@ -63,7 +63,7 @@ class GallerySeeder extends Seeder
             'https://www.mrstairs.com/wp-content/uploads/2019/04/1.jpg',
             'https://www.mrstairs.com/wp-content/uploads/2019/04/pine1-c.jpg',
             'https://www.mrstairs.com/wp-content/uploads/2019/04/pine1-b.jpg',
-            'https://www.mrstairs.com/wp-content/uploads/2019/04/Pine6-b.jpg'
+            'https://www.mrstairs.com/wp-content/uploads/2019/04/Pine6-b.jpg',
         ],
     ];
 
