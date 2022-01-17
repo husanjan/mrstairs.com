@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HelpController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\AddressController;
 use App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\ProfileController;
 use App\Http\Controllers\Frontend\GalleryController;
 
 /*
@@ -52,7 +54,15 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/privacy-policy', [HelpController::class, 'privacyPolicy'])
         ->name('frontend.help.privacyPolicy');
 
-        Route::get('/gallery/{id?}', [GalleryController::class, 'index'])->name('frontend.gallery');
+    // Gallery page
+    Route::get('/gallery', [GalleryController::class, 'index'])->name('frontend.gallery');
+
+    // My account page
+    Route::get('/profile/edit', [ProfileController::class, 'show'])->name('frontend.profile.show');
+    Route::put('/profile/edit', [ProfileController::class, 'edit'])->name('frontend.profile.edit');
+
+    Route::get('/address/edit', [AddressController::class, 'show'])->name('frontend.address.show');
+    Route::put('/address/edit', [AddressController::class, 'edit'])->name('frontend.address.edit');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
