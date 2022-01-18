@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Frontend\AddressRequest;
 
 /**
  * Class AddressController
@@ -17,5 +18,10 @@ class AddressController extends Controller
     public function show()
     {
         return view('frontend.address.show');
+    }
+
+    public function edit(AddressRequest $request)
+    {
+        
     }
 }
