@@ -22,6 +22,6 @@ class AddressController extends Controller
 
     public function edit(AddressRequest $request)
     {
-        
+        dd($request);
     }
 }

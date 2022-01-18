@@ -62,7 +62,7 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::put('/profile/edit', [ProfileController::class, 'edit'])->name('frontend.profile.edit');
 
     Route::get('/address/edit', [AddressController::class, 'show'])->name('frontend.address.show');
-    Route::put('/address/edit', [AddressController::class, 'edit'])->name('frontend.address.edit');
+    Route::post('/address/edit', [AddressController::class, 'edit'])->name('frontend.address.edit');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {

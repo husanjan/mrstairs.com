@@ -1,13 +1,24 @@
 @extends('layouts.frontend.app')
 
 @section('styles')
-<link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/iziToast.css') }}" rel="stylesheet">
+	<script src="{{ asset('js/iziToast.js') }}"></script>
 @endsection
 
 @section('title', 'My Account')
 
 @section('content')
 
+@if ($errors->any())
+<script>
+	@foreach ($errors->all() as $error)
+		iziToast.warning({
+			message: '{{ $error }}'
+		});
+	@endforeach
+</script>
+@endif
 <div class="site-content col-lg-12 col-12 col-md-12" role="main">
 	<article id="post-20" class="post-20 page type-page status-publish hentry">
 		<div class="entry-content">
@@ -37,47 +48,56 @@
 					<!-- .wd-my-account-sidebar -->
 					<div class="woocommerce-MyAccount-content">
 						<div class="woocommerce-notices-wrapper"></div>
-						<form method="post">
+						<form method="post" action="{{ route('frontend.address.edit') }}">
+							@csrf
 							<h3>Billing address</h3>
 							<div class="woocommerce-address-fields">
 								<div class="woocommerce-address-fields__field-wrapper">
-									<p class="form-row address-field validate-required form-row-wide" id="billing_address_1_field"
-										data-priority="6">
+									<p class="form-row address-field validate-required form-row-wide"
+										id="billing_address_1_field" data-priority="6">
 										<label for="billing_address_1" class="">Street
 											address&nbsp;
 											<abbr class="required" title="required">*</abbr>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " name="billing_address_1" id="billing_address_1"
-												placeholder="House number and street name" value="1" autocomplete="address-line1"
+											<input type="text" class="input-text " name="street_address"
+												id="billing_address_1" placeholder="House number and street name"
+												value="{{ old('street_address') }}" autocomplete="address-line1"
 												data-placeholder="House number and street name">
 										</span>
 									</p>
-									<p class="form-row address-field form-row-wide" id="billing_address_2_field" data-priority="7">
+									<p class="form-row address-field form-row-wide" id="billing_address_2_field"
+										data-priority="7">
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " name="billing_address_2" id="billing_address_2"
-												placeholder="Apartment, suite, unit, etc. (optional)" value="" autocomplete="address-line2"
+											<input type="text" class="input-text " name="street_address_2"
+												id="billing_address_2"
+												placeholder="Apartment, suite, unit, etc. (optional)" value="{{ old('street_address_2') }}"
+												autocomplete="address-line2"
 												data-placeholder="Apartment, suite, unit, etc. (optional)">
 										</span>
 									</p>
-									<p class="form-row form-row-first validate-required" id="billing_first_name_field" data-priority="10">
+									<p class="form-row form-row-first validate-required" id="billing_first_name_field"
+										data-priority="10">
 										<label for="billing_first_name" class="">First
 											name&nbsp;
 											<abbr class="required" title="required">*</abbr>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " name="billing_first_name" id="billing_first_name"
-												placeholder="" value="Akmal" autocomplete="given-name">
+											<input type="text" class="input-text " name="first_name"
+												id="billing_first_name" placeholder="" value="{{ old('first_name') }}"
+												autocomplete="given-name">
 										</span>
 									</p>
-									<p class="form-row form-row-last validate-required" id="billing_last_name_field" data-priority="20">
+									<p class="form-row form-row-last validate-required" id="billing_last_name_field"
+										data-priority="20">
 										<label for="billing_last_name" class="">Last
 											name&nbsp;
 											<abbr class="required" title="required">*</abbr>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " name="billing_last_name" id="billing_last_name"
-												placeholder="" value="Gafforov" autocomplete="family-name">
+											<input type="text" class="input-text " name="last_name"
+												id="billing_last_name" placeholder="" value="{{ old('last_name') }}"
+												autocomplete="family-name">
 										</span>
 									</p>
 									<p class="form-row form-row-wide" id="billing_company_field" data-priority="30">
@@ -86,8 +106,9 @@
 											<span class="optional">(optional)</span>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " name="billing_company" id="billing_company" placeholder=""
-												value="" autocomplete="organization">
+											<input type="text" class="input-text " name="company_name"
+												id="billing_company" placeholder="" value="{{ old('company_name') }}"
+												autocomplete="organization">
 										</span>
 									</p>
 									<p class="form-row form-row-wide address-field update_totals_on_change validate-required"
@@ -98,30 +119,33 @@
 										</label>
 										<span class="woocommerce-input-wrapper">
 											<strong>United Kingdom (UK)</strong>
-											<input type="hidden" name="billing_country" id="billing_country" value="GB" autocomplete="country"
-												class="country_to_state" readonly="readonly">
+											<input type="hidden" name="billing_country" id="billing_country" value="GB"
+												autocomplete="country" class="country_to_state" readonly="readonly">
 										</span>
 									</p>
-									<p class="form-row address-field validate-required form-row-wide" id="billing_city_field"
-										data-priority="70" data-o_class="form-row form-row-wide address-field validate-required">
+									<p class="form-row address-field validate-required form-row-wide"
+										id="billing_city_field" data-priority="70"
+										data-o_class="form-row form-row-wide address-field validate-required">
 										<label for="billing_city" class="">Town /
 											City&nbsp;
 											<abbr class="required" title="required">*</abbr>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " name="billing_city" id="billing_city" placeholder=""
-												value="71 Prospect Hill" autocomplete="address-level2">
+											<input type="text" class="input-text " name="city" id="billing_city"
+												placeholder="" value="{{ old('city') }}" autocomplete="address-level2">
 										</span>
 									</p>
-									<p class="form-row address-field validate-state form-row-wide" id="billing_state_field"
-										data-priority="70" data-o_class="form-row form-row-wide address-field validate-state">
+									<p class="form-row address-field validate-state form-row-wide"
+										id="billing_state_field" data-priority="70"
+										data-o_class="form-row form-row-wide address-field validate-state">
 										<label for="billing_state" class="">County&nbsp;
 											<span class="optional">(optional)</span>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " value="" placeholder="" name="billing_state"
-												id="billing_state" data-plugin="select2" data-allow-clear="true" aria-hidden="true"
-												autocomplete="address-level1" data-input-classes="">
+											<input type="text" class="input-text " value="{{ old('county') }}" placeholder=""
+												name="county" id="billing_state" data-plugin="select2"
+												data-allow-clear="true" aria-hidden="true" autocomplete="address-level1"
+												data-input-classes="">
 										</span>
 									</p>
 									<p class="form-row address-field validate-required validate-postcode form-row-wide"
@@ -131,29 +155,32 @@
 											<abbr class="required" title="required">*</abbr>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " name="billing_postcode" id="billing_postcode"
-												placeholder="" value="E1 7AY" autocomplete="postal-code">
+											<input type="text" class="input-text " name="postcode"
+												id="billing_postcode" placeholder="" value="{{ old('postcode') }}"
+												autocomplete="postal-code">
 										</span>
 									</p>
-									<p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field"
-										data-priority="100">
+									<p class="form-row form-row-wide validate-required validate-phone"
+										id="billing_phone_field" data-priority="100">
 										<label for="billing_phone" class="">Phone&nbsp;
 											<abbr class="required" title="required">*</abbr>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder=""
-												value="+992928361001" autocomplete="tel">
+											<input type="tel" class="input-text " name="phone"
+												id="billing_phone" placeholder="" value="{{ old('phone') }}"
+												autocomplete="tel">
 										</span>
 									</p>
-									<p class="form-row form-row-wide validate-required validate-email" id="billing_email_field"
-										data-priority="110">
+									<p class="form-row form-row-wide validate-required validate-email"
+										id="billing_email_field" data-priority="110">
 										<label for="billing_email" class="">Email
 											address&nbsp;
 											<abbr class="required" title="required">*</abbr>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="email" class="input-text " name="billing_email" id="billing_email" placeholder=""
-												value="akmal.ghafforov@gmail.com" autocomplete="email username">
+											<input type="email" class="input-text " name="email"
+												id="billing_email" placeholder="" value="{{ old('email') }}"
+												autocomplete="email username">
 										</span>
 									</p>
 								</div>
@@ -161,9 +188,10 @@
 									<button type="submit" class="button" name="save_address" value="Save address">
 										Save address
 									</button>
-									<input type="hidden" id="woocommerce-edit-address-nonce" name="woocommerce-edit-address-nonce"
-										value="062a468215">
-									<input type="hidden" name="_wp_http_referer" value="/my-account/edit-address/billing/">
+									<input type="hidden" id="woocommerce-edit-address-nonce"
+										name="woocommerce-edit-address-nonce" value="062a468215">
+									<input type="hidden" name="_wp_http_referer"
+										value="/my-account/edit-address/billing/">
 									<input type="hidden" name="action" value="edit_address">
 								</p>
 							</div>
