@@ -16,7 +16,7 @@ class CreateUserAddressesTable extends Migration
         Schema::create('user_addresses', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id')->unique();
-            $table->enum('addres_type', ['billing', 'shipping'])->unique();
+            $table->enum('address_type', ['billing', 'shipping'])->unique();
             $table->string('street_address');
             $table->string('street_address_2')->nullable();
             $table->string('company_name')->nullable();

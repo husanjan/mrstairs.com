@@ -19,6 +19,7 @@
 	@endforeach
 </script>
 @endif
+
 <div class="site-content col-lg-12 col-12 col-md-12" role="main">
 	<article id="post-20" class="post-20 page type-page status-publish hentry">
 		<div class="entry-content">
@@ -62,7 +63,7 @@
 										<span class="woocommerce-input-wrapper">
 											<input type="text" class="input-text " name="street_address"
 												id="billing_address_1" placeholder="House number and street name"
-												value="{{ old('street_address') }}" autocomplete="address-line1"
+												value="{{ $userAddress->street_address ?? old('street_address') }}" autocomplete="address-line1"
 												data-placeholder="House number and street name">
 										</span>
 									</p>
@@ -71,7 +72,7 @@
 										<span class="woocommerce-input-wrapper">
 											<input type="text" class="input-text " name="street_address_2"
 												id="billing_address_2"
-												placeholder="Apartment, suite, unit, etc. (optional)" value="{{ old('street_address_2') }}"
+												placeholder="Apartment, suite, unit, etc. (optional)" value="{{ $userAddress->street_address_2 ?? old('street_address_2') }}"
 												autocomplete="address-line2"
 												data-placeholder="Apartment, suite, unit, etc. (optional)">
 										</span>
@@ -84,7 +85,7 @@
 										</label>
 										<span class="woocommerce-input-wrapper">
 											<input type="text" class="input-text " name="first_name"
-												id="billing_first_name" placeholder="" value="{{ old('first_name') }}"
+												id="billing_first_name" placeholder="" value="{{ $userAddress->first_name ?? old('first_name') }}"
 												autocomplete="given-name">
 										</span>
 									</p>
@@ -96,7 +97,7 @@
 										</label>
 										<span class="woocommerce-input-wrapper">
 											<input type="text" class="input-text " name="last_name"
-												id="billing_last_name" placeholder="" value="{{ old('last_name') }}"
+												id="billing_last_name" placeholder="" value="{{ $userAddress->last_name ?? old('last_name') }}"
 												autocomplete="family-name">
 										</span>
 									</p>
@@ -107,7 +108,7 @@
 										</label>
 										<span class="woocommerce-input-wrapper">
 											<input type="text" class="input-text " name="company_name"
-												id="billing_company" placeholder="" value="{{ old('company_name') }}"
+												id="billing_company" placeholder="" value="{{ $userAddress->company_name ?? old('company_name') }}"
 												autocomplete="organization">
 										</span>
 									</p>
@@ -132,7 +133,7 @@
 										</label>
 										<span class="woocommerce-input-wrapper">
 											<input type="text" class="input-text " name="city" id="billing_city"
-												placeholder="" value="{{ old('city') }}" autocomplete="address-level2">
+												placeholder="" value="{{ $userAddress->city ?? old('city') }}" autocomplete="address-level2">
 										</span>
 									</p>
 									<p class="form-row address-field validate-state form-row-wide"
@@ -142,7 +143,7 @@
 											<span class="optional">(optional)</span>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " value="{{ old('county') }}" placeholder=""
+											<input type="text" class="input-text " value="{{ $userAddress->county ?? old('county') }}" placeholder=""
 												name="county" id="billing_state" data-plugin="select2"
 												data-allow-clear="true" aria-hidden="true" autocomplete="address-level1"
 												data-input-classes="">
@@ -155,8 +156,8 @@
 											<abbr class="required" title="required">*</abbr>
 										</label>
 										<span class="woocommerce-input-wrapper">
-											<input type="text" class="input-text " name="postcode"
-												id="billing_postcode" placeholder="" value="{{ old('postcode') }}"
+											<input type="text" class="input-text " name="post_code"
+												id="billing_postcode" placeholder="" value="{{ $userAddress->post_code ?? old('post_code') }}"
 												autocomplete="postal-code">
 										</span>
 									</p>
@@ -167,7 +168,7 @@
 										</label>
 										<span class="woocommerce-input-wrapper">
 											<input type="tel" class="input-text " name="phone"
-												id="billing_phone" placeholder="" value="{{ old('phone') }}"
+												id="billing_phone" placeholder="" value="{{ $userAddress->phone ?? old('phone') }}"
 												autocomplete="tel">
 										</span>
 									</p>
@@ -179,7 +180,7 @@
 										</label>
 										<span class="woocommerce-input-wrapper">
 											<input type="email" class="input-text " name="email"
-												id="billing_email" placeholder="" value="{{ old('email') }}"
+												id="billing_email" placeholder="" value="{{ $userAddress->email ?? old('email') }}"
 												autocomplete="email username">
 										</span>
 									</p>
@@ -188,11 +189,8 @@
 									<button type="submit" class="button" name="save_address" value="Save address">
 										Save address
 									</button>
-									<input type="hidden" id="woocommerce-edit-address-nonce"
-										name="woocommerce-edit-address-nonce" value="062a468215">
-									<input type="hidden" name="_wp_http_referer"
-										value="/my-account/edit-address/billing/">
-									<input type="hidden" name="action" value="edit_address">
+	
+									<input type="hidden" name="address_type" value="billing">
 								</p>
 							</div>
 						</form>
@@ -204,5 +202,7 @@
 	</article>
 	<!-- #post -->
 </div>
+
+@include('vendor.lara-izitoast.toast')
 
 @endsection

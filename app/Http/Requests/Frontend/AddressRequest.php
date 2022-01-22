@@ -27,12 +27,14 @@ class AddressRequest extends FormRequest
             'street_address' => 'required|string',
             'street_address_2' => 'nullable|string',
             'company_name' => 'nullable|string',
+            'county' => 'nullable|string',
             'first_name' => 'required|string',
             'last_name' => 'required|string',
             'city' => 'required|string',
             'post_code' => 'required',
             'email' => 'required|email',
-            'phone' => 'string'
+            'phone' => 'string',
+            'address_type'=> 'required'
         ];
     }
 }

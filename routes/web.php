@@ -63,7 +63,7 @@ Route::group(['namespace' => 'Frontend'], function () {
 
     Route::get('/address/edit', [AddressController::class, 'show'])->name('frontend.address.show');
     Route::post('/address/edit', [AddressController::class, 'edit'])->name('frontend.address.edit');
-});
+}); 
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/', [\App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin.home');
