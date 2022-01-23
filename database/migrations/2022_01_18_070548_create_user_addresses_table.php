@@ -15,8 +15,8 @@ class CreateUserAddressesTable extends Migration
     {
         Schema::create('user_addresses', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unique();
-            $table->enum('address_type', ['billing', 'shipping'])->unique();
+            $table->unsignedBigInteger('user_id');
+            $table->enum('address_type', ['billing', 'shipping']);
             $table->string('street_address');
             $table->string('street_address_2')->nullable();
             $table->string('company_name')->nullable();
@@ -30,6 +30,7 @@ class CreateUserAddressesTable extends Migration
             $table->string('email');
             $table->timestamps();
 
+            $table->unique(["user_id", "address_type"], 'user_address_type_unique');
             $table->foreign('user_id')->references('id')->on('users');
         });
     }

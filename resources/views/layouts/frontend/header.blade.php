@@ -220,13 +220,13 @@
                                         </li>
 
                                         <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address">
-                                            <a href="https://www.mrstairs.com/my-account/edit-address/">
+                                            <a href="/address">
                                                 <span>Addresses</span>
                                             </a>
                                         </li>
 
                                         <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account">
-                                            <a href="https://www.mrstairs.com/my-account/edit-account/">
+                                            <a href="/my-account/edit-account">
                                                 <span>Account details</span>
                                             </a>
                                         </li>

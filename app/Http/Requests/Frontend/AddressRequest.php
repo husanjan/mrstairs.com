@@ -34,7 +34,7 @@ class AddressRequest extends FormRequest
             'post_code' => 'required',
             'email' => 'required|email',
             'phone' => 'string',
-            'address_type'=> 'required'
+            'address_type' => 'required',
         ];
     }
 }
