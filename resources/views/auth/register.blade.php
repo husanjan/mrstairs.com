@@ -87,6 +87,8 @@
             />
         </p>
 
+
+
         <div class="woocommerce-privacy-policy-text">
             <p>
                 Your personal data will be used to support your experience throughout this website, to manage access to

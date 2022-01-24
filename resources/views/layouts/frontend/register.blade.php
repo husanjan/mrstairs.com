@@ -12,7 +12,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
+    {!! htmlScriptTagJsApi() !!}
     <title>MrStairs ® - UK's #1 Staircase Manufacturer - Create an account</title>
 
     <link rel="stylesheet" href="{{ mix('css/register.css') }}">

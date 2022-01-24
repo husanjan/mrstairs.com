@@ -1,14 +1,12 @@
 @extends('layouts.frontend.app')
 
 @section('title', 'Reset password')
-
+{!! htmlScriptTagJsApi() !!}
 @section('content')
 
-    <form
-        method="post"
+    <form  method="post"
         action="{{ route('password.email') }}"
-        class="woocommerce-ResetPassword lost_reset_password"
-    >
+        class="woocommerce-ResetPassword lost_reset_password">
         @csrf
         <p>
             Lost your password? Please enter your username or email address. You will receive a link to create a new

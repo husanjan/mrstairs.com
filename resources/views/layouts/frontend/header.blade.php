@@ -29,13 +29,11 @@
                                     rel="noopener noreferrer nofollow"
                                     href="https://www.facebook.com/sharer/sharer.php?u=https://www.mrstairs.com/help-resources/"
                                     target="_blank"
-                                    class=" wd-social-icon social-facebook"
-                            >
+                                    class=" wd-social-icon social-facebook">
                                 <span class="wd-icon"></span>
                             </a>
 
-                            <a
-                                    rel="noopener noreferrer nofollow"
+                            <a   rel="noopener noreferrer nofollow"
                                     href="https://twitter.com/share?url=https://www.mrstairs.com/help-resources/"
                                     target="_blank"
                                     class=" wd-social-icon social-twitter"
