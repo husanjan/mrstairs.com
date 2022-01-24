@@ -64,6 +64,9 @@
                                     name="account_display_name" 
                                     id="account_display_name" 
                                     value="{{ $user->name }}" />
+                                    @error('name')
+                                        <span class="has-error">{{ $message }}</span>
+                                    @enderror
                                 <span><em>This will be how your name will be displayed in the account section and in
                                         reviews</em></span>
                             </p>
@@ -78,6 +81,9 @@
                                     autocomplete="email"
                                     value="{{ $user->email }}" 
                                     required/>
+                                    @error('email')
+                                        <span class="has-error">{{ $message }}</span>
+                                    @enderror
                             </p>
                             <fieldset>
                                 <legend>Password change</legend>
@@ -90,6 +96,9 @@
                                             name="password_current" 
                                             id="password_current" 
                                             autocomplete="off" />
+                                            @error('password_current')
+                                                <span class="has-error">{{ $message }}</span>
+                                            @enderror
                                             <span class="show-password-input"></span> </span>
                                 </p>
                                 <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -99,7 +108,11 @@
                                             class="woocommerce-Input woocommerce-Input--password input-text"
                                             name="password_1" 
                                             id="password_1" 
-                                            autocomplete="off" /><span
+                                            autocomplete="off" />
+                                            @error('password_1')
+                                                <span class="has-error">{{ $message }}</span>
+                                            @enderror
+                                            <span
                                             class="show-password-input"></span> </span>
                                 </p>
                                 <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -111,7 +124,9 @@
                                             id="password_2" 
                                             autocomplete="off" />
                                             <span class="show-password-input"></span> 
-                                    </span>
+                                            @error('password_2')
+                                                <span class="has-error">{{ $message }}</span>
+                                            @enderror
                                 </p>
                             </fieldset>
                             <div class="clear"></div>
