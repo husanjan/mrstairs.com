@@ -59,7 +59,8 @@ Route::group(['namespace' => 'Frontend'], function () {
 
     // My account page
     Route::get('/profile/edit', [ProfileController::class, 'show'])->name('frontend.profile.show');
-    Route::put('/profile/edit', [ProfileController::class, 'edit'])->name('frontend.profile.edit');
+    Route::post('/profile/edit', [ProfileController::class, 'edit'])->name('frontend.profile.edit');
+    Route::post('/profile/password/edit', [ProfileController::class, 'change'])->name('frontend.profile.change');
 
     Route::get('/address/edit', [AddressController::class, 'show'])->name('frontend.address.show');
     Route::put('/address/edit', [AddressController::class, 'edit'])->name('frontend.address.edit');

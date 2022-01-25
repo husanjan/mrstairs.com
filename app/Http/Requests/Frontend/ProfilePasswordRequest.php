@@ -2,9 +2,10 @@
 
 namespace App\Http\Requests\Frontend;
 
+use App\Rules\Frontend\ProfileRule;
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProfileRequest extends FormRequest
+class ProfilePasswordRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +25,9 @@ class ProfileRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string',
-            'first_name' => 'nullable|string',
-            'last_name' => 'nullable|string',
-            'email' => 'email|required',
+            'password_current' => ['required', new ProfileRule],
+            'password_1' => 'required|min:8',
+            'password_2' => 'same:password_1'
         ];
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Frontend\ProfilePasswordRequest;
 use App\Http\Requests\Frontend\ProfileRequest;
 use App\Models\User;
 use App\Rules\Frontend\ProfileRule;
@@ -27,24 +28,18 @@ class ProfileController extends Controller
 
     public function edit(ProfileRequest $request)
     {
-        $user = User::find(auth()->user()->id);
+        $user = User::find(auth()->id())
+                        ->update($request->validated());
+        
+        return back();
+    }
 
-        if ($request->current_password) {
-            $request->validate([
-                'current_password' => ['required', new ProfileRule],
-                'password_1' => 'required|min:8',
-                'password_2' => 'same:password_1'
+    public function change(ProfilePasswordRequest $request)
+    {
+        User::find(auth()->id())
+            ->update([
+                'password' => Hash::make($request->password_1)
             ]);
-
-            $user->update([
-                'password' => Hash::make($request->password_1),
-                'first_name' => $request->first_name,
-                'last_name' => $request->last_name,
-                'name' => $request->name,
-                'email' => $request->email,
-            ]);
-        }else {
-            $user->update($request->validated());
-        }
+        return back();
     }
 }

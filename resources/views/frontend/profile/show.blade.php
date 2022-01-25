@@ -35,6 +35,7 @@
                     <div class="woocommerce-MyAccount-content">
                         <div class="woocommerce-notices-wrapper"></div>
                         <form class="woocommerce-EditAccountForm edit-account" action="" method="post">
+                            @csrf
                             <p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
                                 <label for="account_first_name">First name&nbsp;<span class="required">*</span></label>
                                 <input 
@@ -61,14 +62,16 @@
                                 <input 
                                     type="text" 
                                     class="woocommerce-Input woocommerce-Input--text input-text"
-                                    name="account_display_name" 
+                                    name="name" 
                                     id="account_display_name" 
                                     value="{{ $user->name }}" />
                                     @error('name')
                                         <span class="has-error">{{ $message }}</span>
-                                    @enderror
-                                <span><em>This will be how your name will be displayed in the account section and in
+                                    @else
+                                        <span><em>This will be how your name will be displayed in the account section and in
                                         reviews</em></span>
+                                    @enderror
+                                
                             </p>
                             <div class="clear"></div>
                             <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -76,7 +79,7 @@
                                 <input 
                                     type="email" 
                                     class="woocommerce-Input woocommerce-Input--email input-text"
-                                    name="account_email" 
+                                    name="email" 
                                     id="account_email" 
                                     autocomplete="email"
                                     value="{{ $user->email }}" 
@@ -85,6 +88,15 @@
                                         <span class="has-error">{{ $message }}</span>
                                     @enderror
                             </p>
+                            <p>  
+                                <button type="submit" 
+                                    class="woocommerce-Button button" 
+                                    name="save_account_details"
+                                    value="Save changes"> Save changes </button>
+                            </p>
+                        </form>
+                        <form method="POST" action="{{ route('frontend.profile.change') }}">
+                            @csrf
                             <fieldset>
                                 <legend>Password change</legend>
                                 <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -134,7 +146,7 @@
                                 <button type="submit" 
                                     class="woocommerce-Button button" 
                                     name="save_account_details"
-                                    value="Save changes"> Save changes </button>
+                                    value="Save changes">Change password</button>
                             </p>
                         </form>
                     </div>
