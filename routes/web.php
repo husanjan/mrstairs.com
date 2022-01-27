@@ -62,8 +62,9 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::post('/profile/edit', [ProfileController::class, 'edit'])->name('frontend.profile.edit');
     Route::post('/profile/password/edit', [ProfileController::class, 'change'])->name('frontend.profile.change');
 
-    Route::get('/address/edit', [AddressController::class, 'show'])->name('frontend.address.show');
-    Route::put('/address/edit', [AddressController::class, 'edit'])->name('frontend.address.edit');
+    Route::get('/address', [AddressController::class, 'index'])->name('frontend.address.index');
+    Route::get('/address/edit/{type?}', [AddressController::class, 'show'])->name('frontend.address.show');
+    Route::post('/address/edit', [AddressController::class, 'edit'])->name('frontend.address.edit');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
