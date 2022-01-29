@@ -31,7 +31,10 @@
     <link rel="icon" href="https://www.mrstairs.com/wp-content/uploads/2019/03/cropped-android-chrome-512x512-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="https://www.mrstairs.com/wp-content/uploads/2019/03/cropped-android-chrome-512x512-180x180.png">
     <meta name="msapplication-TileImage" content="https://www.mrstairs.com/wp-content/uploads/2019/03/cropped-android-chrome-512x512-270x270.png">
-    {!! RecaptchaV3::initJs() !!}
+
+    @if (config('captcha.enabled'))
+        {!! RecaptchaV3::initJs() !!}
+    @endif
 </head>
 
 

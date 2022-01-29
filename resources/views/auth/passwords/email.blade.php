@@ -3,7 +3,6 @@
 @section('title', 'Reset password')
 
 @section('content')
-    {!! RecaptchaV3::initJs() !!}
     <form
         method="post"
         action="{{ route('password.email') }}"

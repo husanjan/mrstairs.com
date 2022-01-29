@@ -3,8 +3,8 @@
 @section('content')
 
     <form
-        class="woocommerce-form woocommerce-form-login login"
-        method="post"
+            class="woocommerce-form woocommerce-form-login login"
+            method="post"
     >
         @csrf
 
@@ -15,13 +15,13 @@
             </label>
 
             <input
-                id="name"
-                type="text"
-                class="form-control input-text"
-                name="name"
-                placeholder="Name"
-                required
-                autofocus
+                    id="name"
+                    type="text"
+                    class="form-control input-text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                    autofocus
             >
 
             @if ($errors->has('name'))
@@ -36,12 +36,12 @@
             </label>
 
             <input
-                type="text"
-                placeholder="Email"
-                id="email_address"
-                class="form-control input-text"
-                name="email"
-                required
+                    type="text"
+                    placeholder="Email"
+                    id="email_address"
+                    class="form-control input-text"
+                    name="email"
+                    required
             >
 
             @if ($errors->has('email'))
@@ -56,12 +56,12 @@
             </label>
 
             <input
-                id="password"
-                type="password"
-                placeholder="Password"
-                class="form-control"
-                name="password"
-                required
+                    id="password"
+                    type="password"
+                    placeholder="Password"
+                    class="form-control"
+                    name="password"
+                    required
             >
 
             @if ($errors->has('password'))
@@ -69,27 +69,31 @@
             @endif
         </p>
 
-        <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
+        @if (config('captcha.enabled'))
 
-            <div class="col-md-6">
+            <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
 
-                {!! RecaptchaV3::field('register') !!}
+                <div class="col-md-6">
 
-                @if ($errors->has('g-recaptcha-response'))
+                    {!! RecaptchaV3::field('register') !!}
 
-                    <span class="help-block">
-                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-                    </span>
+                    @if ($errors->has('g-recaptcha-response'))
 
-                @endif
+                        <span class="help-block">
+                            <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                        </span>
+
+                    @endif
+
+                </div>
 
             </div>
 
-        </div>
+        @endif
 
 
         <p
-            class="woocommerce-form-row form-row  ms-form-control material"
+                class="woocommerce-form-row form-row  ms-form-control material"
         >
             <label for="password_confirmation">
                 Confirm
@@ -97,15 +101,14 @@
             </label>
 
             <input
-                type="password"
-                class="input-text form-control"
-                name="password_confirmation"
-                id="password_confirmation"
-                autocomplete="new-password"
-                placeholder="Confirm Password"
+                    type="password"
+                    class="input-text form-control"
+                    name="password_confirmation"
+                    id="password_confirmation"
+                    autocomplete="new-password"
+                    placeholder="Confirm Password"
             />
         </p>
-
 
 
         <div class="woocommerce-privacy-policy-text">
@@ -113,9 +116,9 @@
                 Your personal data will be used to support your experience throughout this website, to manage access to
                 your account, and for other purposes described in our
                 <a
-                    href="https://www.mrstairs.com/privacy-policy/"
-                    class="woocommerce-privacy-policy-link"
-                    target="_blank"
+                        href="https://www.mrstairs.com/privacy-policy/"
+                        class="woocommerce-privacy-policy-link"
+                        target="_blank"
                 >
                     privacy policy
                 </a>.
@@ -128,10 +131,10 @@
 
         <div class="actions">
             <button
-                type="submit"
-                class="btn-lg float-left btn btn-primary"
-                name="register"
-                value="Log in"
+                    type="submit"
+                    class="btn-lg float-left btn btn-primary"
+                    name="register"
+                    value="Log in"
             >
                 Register
             </button>

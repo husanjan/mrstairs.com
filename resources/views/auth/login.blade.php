@@ -22,31 +22,37 @@
                 <input placeholder="" type="password" name="password" id="password" class="mdc-text-field__input">
             </span>
         </div>
-        <div class="col-md-6">
 
-            {!! RecaptchaV3::field('login') !!}
 
-            @if ($errors->has('g-recaptcha-response'))
+        @if (config('captcha.enabled'))
 
-                <span class="help-block">
+            <div class="col-md-6">
 
-                    <strong style="color: red">{{ $errors->first('g-recaptcha-response') }}</strong>
+                {!! RecaptchaV3::field('login') !!}
 
-                </span>
+                @if ($errors->has('g-recaptcha-response'))
 
-            @endif
+                    <span class="help-block">
 
-        </div>
+                        <strong style="color: red">{{ $errors->first('g-recaptcha-response') }}</strong>
+
+                    </span>
+
+                @endif
+
+            </div>
+
+        @endif
 
         <div class="form-row col-12 d-block clearfix mt-2 mb-4">
 
             <span class="custom-control custom-checkbox d-inline-block">
                     <input
-                        id="rememberme"
-                        type="checkbox"
-                        name="rememberme"
-                        class="custom-control-input"
-                        value="forever"
+                            id="rememberme"
+                            type="checkbox"
+                            name="rememberme"
+                            class="custom-control-input"
+                            value="forever"
                     >
                     <label class="custom-control-label" for="rememberme">Remember me</label>
             </span>
@@ -69,17 +75,17 @@
         @endif
         <div class="actions">
             <button
-                type="submit"
-                class="btn-lg float-left btn btn-primary"
-                name="login"
-                value="Log in"
+                    type="submit"
+                    class="btn-lg float-left btn btn-primary"
+                    name="login"
+                    value="Log in"
             >
                 Login
             </button>
 
             <a
-                class="btn-lg float-right btn btn-outline-secondary"
-                href="register"
+                    class="btn-lg float-right btn btn-outline-secondary"
+                    href="register"
             >
                 Create an account
             </a>

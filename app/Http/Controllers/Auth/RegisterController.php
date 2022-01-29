@@ -61,7 +61,7 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ];
 
-        if (env('RECAPTCHA_ENABLED')) {
+        if (config('captcha.enabled')) {
             $validations['g-recaptcha-response'] = 'required|recaptchav3:register,0.5';
         }
 

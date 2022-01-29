@@ -57,7 +57,7 @@ class LoginController extends Controller
             'password' => 'required|min:8',
         ];
 
-        if (env('RECAPTCHA_ENABLED')) {
+        if (config('captcha.enabled')) {
             $validations['g-recaptcha-response'] = 'required|recaptchav3:login,0.5';
         }
 
