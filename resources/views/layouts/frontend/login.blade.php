@@ -22,7 +22,7 @@
     <meta name="theme-color" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
-
+{!! RecaptchaV3::initJs() !!}
 
 <body class="page-template page-template-page-templates page-template-login page-template-page-templateslogin-php page page-id-587 full-height theme-woodmart woocommerce-no-js wrapper-full-width  form-style-square  form-border-width-2 categories-accordion-on woodmart-ajax-shop-on offcanvas-sidebar-mobile offcanvas-sidebar-tablet notifications-sticky elementor-default">
 

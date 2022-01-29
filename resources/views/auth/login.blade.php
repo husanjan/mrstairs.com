@@ -22,7 +22,21 @@
                 <input placeholder="" type="password" name="password" id="password" class="mdc-text-field__input">
             </span>
         </div>
+        <div class="col-md-6">
 
+            {!! RecaptchaV3::field('login') !!}
+
+            @if ($errors->has('g-recaptcha-response'))
+
+                <span class="help-block">
+
+                                        <strong style="color: red">{{ $errors->first('g-recaptcha-response') }}</strong>
+
+                                    </span>
+
+            @endif
+
+        </div>
 
         <div class="form-row col-12 d-block clearfix mt-2 mb-4">
 

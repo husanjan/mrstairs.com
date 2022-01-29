@@ -3,6 +3,12 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Frontend\ProfilePasswordRequest;
+use App\Http\Requests\Frontend\ProfileRequest;
+use App\Models\User;
+use App\Rules\Frontend\ProfileRule;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 /**
  * Class ProfileController
@@ -16,11 +22,24 @@ class ProfileController extends Controller
      */
     public function show()
     {
-        return view('frontend.profile.show');
+        $user = User::find(auth()->id());
+        return view('frontend.profile.show', compact('user'));
     }
 
-    public function edit()
+    public function edit(ProfileRequest $request)
     {
-        // Инҷаба формая данныхоша сохранить кунед
+        $user = User::find(auth()->id())
+                        ->update($request->validated());
+        
+        return back();
+    }
+
+    public function change(ProfilePasswordRequest $request)
+    {
+        User::find(auth()->id())
+            ->update([
+                'password' => Hash::make($request->password_1)
+            ]);
+        return back();
     }
 }

@@ -68,7 +68,25 @@
                 <span class="text-danger">{{ $errors->first('password') }}</span>
             @endif
         </p>
+        <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
 
+            <div class="col-md-6">
+
+                {!! RecaptchaV3::field('register') !!}
+
+                @if ($errors->has('g-recaptcha-response'))
+
+                    <span class="help-block">
+
+                                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+
+                                    </span>
+
+                @endif
+
+            </div>
+
+        </div>
         <p
             class="woocommerce-form-row form-row  ms-form-control material"
         >

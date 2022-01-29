@@ -211,12 +211,6 @@
                                             </a>
                                         </li>
 
-                                        <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--downloads">
-                                            <a href="https://www.mrstairs.com/my-account/downloads/">
-                                                <span>Downloads</span>
-                                            </a>
-                                        </li>
-
                                         <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-address">
                                             <a href="/address">
                                                 <span>Addresses</span>
@@ -224,7 +218,7 @@
                                         </li>
 
                                         <li class="woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--edit-account">
-                                            <a href="/my-account/edit-account">
+                                            <a href="/profile/edit">
                                                 <span>Account details</span>
                                             </a>
                                         </li>
