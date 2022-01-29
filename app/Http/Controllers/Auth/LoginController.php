@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -46,15 +45,18 @@ class LoginController extends Controller
     }
 
     /**
+     * Validate the user login request.
+     *
      * @param \Illuminate\Http\Request $request
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return void
+     *
      */
-    public function login(Request $request)
+    protected function validateLogin(Request $request)
     {
         $validations = [
-            'email' => 'required|email|max:50',
-            'password' => 'required|min:8',
+            $this->username() => 'required|string',
+            'password' => 'required|string',
         ];
 
         if (config('captcha.enabled')) {
@@ -62,12 +64,5 @@ class LoginController extends Controller
         }
 
         $request->validate($validations);
-
-        $credentials = $request->only('email', 'password');
-        if (Auth::attempt($credentials)) {
-            return redirect('/');
-        }
-
-        return redirect("login")->withSuccess('Login details are not valid');
     }
 }
