@@ -30,9 +30,9 @@
 
                 <span class="help-block">
 
-                                        <strong style="color: red">{{ $errors->first('g-recaptcha-response') }}</strong>
+                    <strong style="color: red">{{ $errors->first('g-recaptcha-response') }}</strong>
 
-                                    </span>
+                </span>
 
             @endif
 

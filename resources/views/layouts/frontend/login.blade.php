@@ -9,20 +9,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link
-        rel="stylesheet"
-        media="print"
-        onload="this.onload=null;this.media='all';"
-        id="ao_optimized_gfonts"
-        href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C600%7CLato%3A400%2C700%7CPoppins%3A400%2C600%7CLato%3A400%2C700%7CPoppins%3A400%2C600%7CLato%3A400%2C700&amp;display=swap"
+            rel="stylesheet"
+            media="print"
+            onload="this.onload=null;this.media='all';"
+            id="ao_optimized_gfonts"
+            href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C600%7CLato%3A400%2C700%7CPoppins%3A400%2C600%7CLato%3A400%2C700%7CPoppins%3A400%2C600%7CLato%3A400%2C700&amp;display=swap"
     />
 
     <title>MrStairs ® - UK&#039;s #1 Staircase Manufacturer - Login</title>
-    {!! htmlScriptTagJsApi() !!}
 
     <meta name="theme-color" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    {!! RecaptchaV3::initJs() !!}
 </head>
-{!! RecaptchaV3::initJs() !!}
 
 <body class="page-template page-template-page-templates page-template-login page-template-page-templateslogin-php page page-id-587 full-height theme-woodmart woocommerce-no-js wrapper-full-width  form-style-square  form-border-width-2 categories-accordion-on woodmart-ajax-shop-on offcanvas-sidebar-mobile offcanvas-sidebar-tablet notifications-sticky elementor-default">
 
