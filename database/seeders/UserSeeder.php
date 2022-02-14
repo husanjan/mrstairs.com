@@ -32,4 +32,5 @@ class UserSeeder extends Seeder
             'password' => Hash::make('customer_pass'),
         ]);
     }
+
 }
